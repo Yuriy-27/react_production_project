@@ -1,14 +1,16 @@
 import HTMLWebpackPlugin from "html-webpack-plugin";
 import path from "path";
 import webpack from "webpack";
-import { BuildOptions } from "./types/config";
+import { IBuildOptions } from "./types/config";
 
 export function buildPlugins({
   paths,
-}: BuildOptions): webpack.WebpackPluginInstance[] {
+  mode,
+}: IBuildOptions): webpack.WebpackPluginInstance[] {
   return [
     new HTMLWebpackPlugin({
       template: paths.html,
+      minify: mode === "production",
     }),
     new webpack.ProgressPlugin(),
   ];
