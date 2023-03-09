@@ -9,7 +9,11 @@ const AppRouter = () => {
       <Routes>
         {
           Object.values(RouteConfig).map(({ element, path }) => (
-            <Route key={path} path={path} element={element} />
+            <Route key={path} path={path} element={
+              <div className="content-wrapper">
+                {element}
+              </div>
+            } />
           ))
         }
       </Routes>
