@@ -11,7 +11,7 @@ export function classNames(
     ...Object.entries(mods)
       .filter(([_, value]) => Boolean(value))
       .map(([className]) => className),
-  ].join('');
+  ].join(' ');
 }
 
 // classNames("button", { "button--primary": true, "button--disabled": false }, ["button--small", "button--large"])
