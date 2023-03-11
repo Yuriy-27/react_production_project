@@ -1,27 +1,27 @@
-import MiniCssExtractPlugin from "mini-css-extract-plugin";
-import webpack from "webpack";
-import { IBuildOptions } from "./types/config";
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import webpack from 'webpack';
+import { IBuildOptions } from './types/config';
 
 export function buildLoaders({ isDev }: IBuildOptions): webpack.RuleSetRule[] {
   const svgLoader = {
     test: /\.svg$/,
-    use: ["@svgr/webpack"],
+    use: ['@svgr/webpack'],
   };
 
   const babelLoader = {
     test: /\.(js|jsx|tsx|ts)$/,
     exclude: /node_modules/,
     use: {
-      loader: "babel-loader",
+      loader: 'babel-loader',
       options: {
-        presets: ["@babel/preset-env"],
-        "plugins": [
-          ["i18next-extract", {
-            "nsSeparator": "~",
-            locales: ["en", "ua"],
+        presets: ['@babel/preset-env'],
+        plugins: [
+          ['i18next-extract', {
+            nsSeparator: '~',
+            locales: ['en', 'ua'],
             keyAsDefaultValue: true,
-          }]
-        ]
+          }],
+        ],
       },
     },
   };
@@ -30,27 +30,26 @@ export function buildLoaders({ isDev }: IBuildOptions): webpack.RuleSetRule[] {
     test: /\.s[ac]ss$/i,
     use: [
       // Creates `style` nodes from JS strings
-      isDev ? "style-loader" : MiniCssExtractPlugin.loader,
+      isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
       // Translates CSS into CommonJS
       {
-        loader: "css-loader",
+        loader: 'css-loader',
         options: {
           modules: {
-            auto: (resourcePath: string) =>
-              Boolean(resourcePath.includes(".module.")),
+            auto: (resourcePath: string) => Boolean(resourcePath.includes('.module.')),
             localIdentName: isDev
-              ? "[path][name]__[local]--[hash:base64:5]"
-              : "[hash:base64:8]",
+              ? '[path][name]__[local]--[hash:base64:5]'
+              : '[hash:base64:8]',
           },
         },
       },
       // Compiles Sass to CSS
-      "sass-loader",
+      'sass-loader',
     ],
   };
   const typescriptLoader = {
     test: /\.tsx?$/,
-    use: "ts-loader",
+    use: 'ts-loader',
     exclude: /node_modules/,
   };
 
@@ -58,7 +57,7 @@ export function buildLoaders({ isDev }: IBuildOptions): webpack.RuleSetRule[] {
     test: /\.(png|jpe?g|gif)$/i,
     use: [
       {
-        loader: "file-loader",
+        loader: 'file-loader',
       },
     ],
   };
