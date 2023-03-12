@@ -1,0 +1,16 @@
+.PageError {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.PageErrorBtn {
+  margin-top: 10px;
+  border: 1px solid #0d6efd;
+  color: #0d6efd;
+}

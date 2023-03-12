@@ -2,5 +2,8 @@
     "test": "test example",
     "translate": "translate",
     "language": "English",
-    "not_found_page": "Page not found"
+    "not_found_page": "Page not found",
+    "page_error": "Something went wrong! :(",
+    "page_error_reload_button": "Reload the page",
+    "bug_button": "Report a bug"
 }

@@ -1,6 +1,9 @@
 {
   "about-page": "about-page",
+  "bug_button": "bug_button",
   "language": "language",
   "main-page": "main-page",
-  "not_found_page": "not_found_page"
+  "not_found_page": "not_found_page",
+  "page_error": "page_error",
+  "page_error_reload_button": "page_error_reload_button"
 }
