@@ -42,9 +42,22 @@ module.exports = {
     'no-unused-vars': 'warn',
     'no-shadow': 'off',
     'no-underscore-dangle': 'off',
-    'i18next/no-literal-string': ['warn', { markupOnly: true }],
+    'i18next/no-literal-string': [
+      'warn',
+      {
+        markupOnly: true,
+        ignoreAttributes: ['data-testid'],
+      }],
   },
   globals: {
     __IS_DEV__: true,
   },
+  overrides: [
+    {
+      files: ['**/src/**/*.{ts,tsx}'],
+      rules: {
+        'i18next/no-literal-string': 'off',
+      },
+    },
+  ],
 };
