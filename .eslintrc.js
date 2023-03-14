@@ -4,7 +4,7 @@ module.exports = {
     es2021: true,
     jest: true,
   },
-  extends: ['plugin:react/recommended', 'airbnb', 'plugin:i18next/recommended'],
+  extends: ['plugin:react/recommended', 'airbnb', 'plugin:i18next/recommended', 'plugin:storybook/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -18,12 +18,9 @@ module.exports = {
     'react/jsx-indent': [2, 2],
     'react/jsx-indent-props': [2, 2],
     indent: [2, 2],
-    'react/jsx-filename-extension': [
-      2,
-      {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      },
-    ],
+    'react/jsx-filename-extension': [2, {
+      extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    }],
     'react/require-default-props': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/jsx-props-no-spreading': 'warn',
@@ -32,33 +29,25 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'import/extensions': 'off',
     'import/no-extraneous-dependencies': 'off',
-    'max-len': [
-      'error',
-      {
-        code: 120,
-        ignoreComments: true,
-      },
-    ],
+    'max-len': ['error', {
+      code: 120,
+      ignoreComments: true,
+    }],
     'no-unused-vars': 'warn',
     'no-shadow': 'off',
     'no-underscore-dangle': 'off',
-    'i18next/no-literal-string': [
-      'warn',
-      {
-        markupOnly: true,
-        ignoreAttributes: ['data-testid'],
-      },
-    ],
+    'i18next/no-literal-string': ['warn', {
+      markupOnly: true,
+      ignoreAttributes: ['data-testid', 'to', 'href', 'alt', 'title'],
+    }],
   },
   globals: {
     __IS_DEV__: true,
   },
-  overrides: [
-    {
-      files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
-      rules: {
-        'i18next/no-literal-string': 'off',
-      },
+  overrides: [{
+    files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
+    rules: {
+      'i18next/no-literal-string': 'off',
     },
-  ],
+  }],
 };

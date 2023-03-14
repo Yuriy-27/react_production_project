@@ -1,9 +1,12 @@
 {
   "about-page": "about-page",
+  "about_page_nav": "about_page_nav",
   "bug_button": "bug_button",
+  "home_page_nav": "home_page_nav",
   "language": "language",
   "main-page": "main-page",
   "not_found_page": "not_found_page",
   "page_error": "page_error",
-  "page_error_reload_button": "page_error_reload_button"
+  "page_error_reload_button": "page_error_reload_button",
+  "toggle": "toggle"
 }

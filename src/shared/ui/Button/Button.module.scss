@@ -3,11 +3,8 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  border-radius: 5px;
-  background: none; 
   padding: 5px 10px;
+  color: var(--primary-color);
 }
 
 .clear {
@@ -19,6 +16,19 @@
   color: var(--primary-color);
 }
 
+.appTheme {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  background: none;
+}
+
 .light {
   background-color: #fff;
+}
+
+.outlined {
+  border: 1px solid var(--primary-color);
+  background: none;
+  color: var(--primary-color);
 }
