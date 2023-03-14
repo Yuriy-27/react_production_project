@@ -1,9 +1,10 @@
 {
-    "test": "test example",
-    "translate": "translate",
-    "language": "English",
-    "not_found_page": "Page not found",
-    "page_error": "Something went wrong! :(",
-    "page_error_reload_button": "Reload the page",
-    "bug_button": "Report a bug"
+  "bug_button": "Report a bug",
+  "language": "English",
+  "not_found_page": "Page not found",
+  "page_error": "Something went wrong! :(",
+  "page_error_reload_button": "Reload the page",
+  "test": "test example",
+  "toggle": "Toggle",
+  "translate": "translate"
 }
