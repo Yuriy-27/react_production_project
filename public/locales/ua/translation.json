@@ -3,10 +3,11 @@
   "bug_button": "Повідомити про помилку",
   "home_page_nav": "Головна",
   "language": "Українська",
-  "short_lang_name": "Укр",
+  "login_button": "Увійти",
   "not_found_page": "Сторінка не знайдена",
   "page_error": "Опаньки, якісь ГАБЕЛІ! :(",
   "page_error_reload_button": "Перезавантажити сторінку",
+  "short_lang_name": "Укр",
   "test": "Тестовий текст",
   "toggle": " переключити",
   "translate": "Переклад"
