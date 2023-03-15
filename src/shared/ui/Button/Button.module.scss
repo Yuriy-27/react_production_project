@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  padding: 5px 10px;
+  padding: 8px 12px;
   color: var(--primary-color);
 }
 
@@ -16,19 +16,57 @@
   color: var(--primary-color);
 }
 
-.appTheme {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  border-radius: 5px;
-  background: none;
-}
-
-.light {
-  background-color: #fff;
-}
-
 .outlined {
   border: 1px solid var(--primary-color);
   background: none;
   color: var(--primary-color);
+}
+
+.background {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-color);
+  border: none;
+}
+
+.backgroundInverted {
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-color);
+  border: none;
+}
+
+.square {
+  padding: 0;
+}
+
+.square.size_m {
+  width: var(--font-line-height-m);
+  height: var(--font-line-height-m);
+  font-size: var(--font-size-m);
+}
+
+.square.size_l {
+  width: var(--font-line-height-l);
+  height: var(--font-line-height-l);
+  font-size: var(--font-size-l);
+}
+
+.square.size_xl {
+  width: var(--font-line-height-xl);
+  height: var(--font-line-height-xl);
+  font-size: var(--font-size-xl);
+}
+
+.size_m {
+  font-size: var(--font-size-m);
+  line-height: var(--font-line-height-m);
+}
+
+.size_l {
+  font-size: var(--font-size-l);
+  line-height: var(--font-line-height-l);
+}
+
+.size_xl {
+  font-size: var(--font-size-xl);
+  line-height: var(--font-line-height-xl);
 }

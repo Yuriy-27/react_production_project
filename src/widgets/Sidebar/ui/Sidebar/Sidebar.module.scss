@@ -6,10 +6,6 @@
   transition: width 0.3s ease-in-out;
 }
 
-.collapsed {
-  width: var(--sidebar-collapsed-width);
-}
-
 .Switchers {
   position: absolute;
   bottom: 20px;
@@ -19,5 +15,48 @@
 }
 
 .lang {
-  margin-left: 10px;
+  margin: 0 0 0 10px;
+}
+
+.collapsed {
+  width: var(--sidebar-collapsed-width);
+
+  .Switchers {
+    flex-direction: column;
+  }
+
+  .lang {
+    margin: 10px 0 0;
+  }
+}
+
+.collapsedButton {
+  position: absolute;
+  bottom: 40px;
+  right: -40px;
+  cursor: pointer;
+  outline: none;
+  object-fit: contain;
+}
+
+.NavLinks {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.linkIcon {
+  margin-right: 10px;
+
+  &.collapsed {
+    margin-right: 0;
+  }
 }
