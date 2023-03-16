@@ -1,7 +1,9 @@
 {
   "about_page_nav": "About us",
   "bug_button": "Report a bug",
+  "decrement": "Decrement",
   "home_page_nav": "Home",
+  "increment": "Increment",
   "language": "English",
   "login_button": "Login",
   "not_found_page": "Page not found",

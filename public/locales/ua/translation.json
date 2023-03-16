@@ -1,7 +1,9 @@
 {
   "about_page_nav": "Про нас",
   "bug_button": "Повідомити про помилку",
+  "decrement": "Зменшити",
   "home_page_nav": "Головна",
+  "increment": "Збільшити",
   "language": "Українська",
   "login_button": "Увійти",
   "not_found_page": "Сторінка не знайдена",
