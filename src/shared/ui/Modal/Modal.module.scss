@@ -8,11 +8,6 @@
   pointer-events: none;
   z-index: -1;
   color: var(--primary-color);
-
-  &.dark {
-    --secondary-bg-color: #1f1f1f;
-    --primary-color: #bb86fc;
-  }
 }
 
 .overlay {
