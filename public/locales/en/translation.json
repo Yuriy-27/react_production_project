@@ -5,12 +5,15 @@
   "home_page_nav": "Home",
   "increment": "Increment",
   "language": "English",
+  "login": "Login",
   "login_button": "Login",
   "not_found_page": "Page not found",
   "page_error": "Something went wrong! :(",
   "page_error_reload_button": "Reload the page",
+  "password": "Password",
   "short_lang_name": "EN",
   "test": "test example",
   "toggle": "Toggle",
-  "translate": "translate"
+  "translate": "translate",
+  "username": "Username"
 }

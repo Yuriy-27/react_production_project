@@ -6,10 +6,13 @@
   "home_page_nav": "",
   "increment": "increment",
   "language": "language",
+  "login": "login",
   "login_button": "",
   "main-page": "main-page",
   "not_found_page": "not_found_page",
   "page_error": "page_error",
   "page_error_reload_button": "page_error_reload_button",
-  "toggle": ""
+  "password": "password",
+  "toggle": "",
+  "username": "username"
 }

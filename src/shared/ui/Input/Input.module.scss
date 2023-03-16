@@ -1,0 +1,20 @@
+.InputWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.Input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid var(--primary-color-variant);
+  border-radius: 5px;
+  outline: none;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+.Label {
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}

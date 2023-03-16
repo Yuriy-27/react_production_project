@@ -1,0 +1,26 @@
+.LoginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 100%;
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.loginButton {
+  margin-top: 15px;
+  margin-left: auto;
+  border: 1px solid var(--primary-color-variant);
+  border-radius: 5px;
+  color: var(--primary-color);
+  background-color: var(--primary-bg-color);
+}
