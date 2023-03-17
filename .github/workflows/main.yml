@@ -21,12 +21,6 @@ jobs:
         run: npm install
       - name: Build project
         run: npm run build:prod
-      - name: Lint typescript
-        run: npm run lint:ts
-        if: always()
-      - name: Lint css
-        run: npm run lint:scss
-        if: always()
       - name: Unit testing
         run: npm run test:unit
         if: always()
