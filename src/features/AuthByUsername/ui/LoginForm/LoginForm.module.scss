@@ -19,8 +19,10 @@
 .loginButton {
   margin-top: 15px;
   margin-left: auto;
-  border: 1px solid var(--primary-color-variant);
   border-radius: 5px;
-  color: var(--primary-color);
-  background-color: var(--primary-bg-color);
+}
+
+.error {
+  margin-top: 10px;
+  color: var(--error-color);
 }

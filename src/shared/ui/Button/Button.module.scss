@@ -70,3 +70,8 @@
   font-size: var(--font-size-xl);
   line-height: var(--font-line-height-xl);
 }
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
