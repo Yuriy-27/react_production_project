@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { Input } from 'shared/ui/Input/Input';
+import { Text, TextTheme } from 'shared/ui/Text/Text';
 import { getLoginState } from '../../model/selectors/getLoginState';
 import { loginByUsername } from '../../model/services/loginByUserName/loginByUserName';
 import { loginActions } from '../../model/slice/loginSlice';
@@ -35,6 +36,7 @@ export const LoginForm = memo((props: ILoginFormProps) => {
 
   return (
     <div className={classNames(cls.LoginForm, {}, [className])}>
+      <Text title={t('login_form')} />
       <Input
         name="username"
         type="text"
@@ -52,7 +54,7 @@ export const LoginForm = memo((props: ILoginFormProps) => {
         onChange={onChangePassword}
         value={password}
       />
-      {error && <span className={cls.error}>{error}</span>}
+      {error && <Text theme={TextTheme.ERROR} text={error} />}
       <Button
         theme={ButtonTheme.OUTLINED}
         className={cls.loginButton}

@@ -7,6 +7,8 @@
   "language": "English",
   "login": "Login",
   "login_button": "Login",
+  "login_error": "You entered an incorrect login or password",
+  "login_form": "Login form",
   "not_found_page": "Page not found",
   "page_error": "Something went wrong! :(",
   "page_error_reload_button": "Reload the page",

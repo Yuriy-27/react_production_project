@@ -8,6 +8,8 @@
   "language": "language",
   "login": "login",
   "login_button": "",
+  "login_error": "login_error",
+  "login_form": "",
   "main-page": "main-page",
   "not_found_page": "not_found_page",
   "page_error": "page_error",
