@@ -9,6 +9,7 @@
   "login_button": "Увійти",
   "login_error": "Ви ввели невірний логін або пароль",
   "login_form": "Форма авторизації",
+  "logout_button": "Вийти",
   "not_found_page": "Сторінка не знайдена",
   "page_error": "Опаньки, якісь ГАБЕЛІ! :(",
   "page_error_reload_button": "Перезавантажити сторінку",
