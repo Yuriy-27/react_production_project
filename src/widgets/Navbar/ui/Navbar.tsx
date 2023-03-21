@@ -58,7 +58,7 @@ export function Navbar({ className }: INavbarProps) {
         >
           {t('login_button')}
         </Button>
-        <LoginModal isOpen={isAuthModalOpen} onClose={onCloseAuthModal} />
+        {isAuthModalOpen && <LoginModal isOpen={isAuthModalOpen} onClose={onCloseAuthModal} />}
       </div>
     </div>
   );
