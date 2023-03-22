@@ -31,8 +31,8 @@
     }
   ],
   "profile": {
-    "firstname": "Yurii",
-    "lastname": "Shchebetun",
+    "firstName": "Yurii",
+    "lastName": "Shchebetun",
     "age": 31,
     "currency": "UAH",
     "country": "Ukraine",
