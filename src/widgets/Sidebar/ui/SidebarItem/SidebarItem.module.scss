@@ -1,0 +1,17 @@
+.SidebarItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.linkIcon {
+  margin-right: 10px;
+
+  &.collapsed {
+    margin-right: 0;
+  }
+}

@@ -18,7 +18,7 @@
   "React TypeScript Functional Component": {
     "prefix": "rfct",
     "body": [
-      "import { FC } from 'react';",
+      "import { memo } from 'react';",
       "import { useTranslation } from 'react-i18next';",
       "import { classNames } from 'shared/lib/classNames/classNames';",
       "import cls from './${1:ComponentName}.module.scss';",
@@ -27,7 +27,7 @@
       "  className?: string;",
       "}",
       "",
-      "export const ${1:ComponentName}: FC<I${1:ComponentName}Props> = (props) => {",
+      "export const ${1:ComponentName} = memo((props: I${1:ComponentName}Props) => {",
       "  const { className } = props;",
       "  const { t } = useTranslation();",
       "",
@@ -36,7 +36,7 @@
       "      ${1:ComponentName}",
       "    </div>",
       "  );",
-      "};",
+      "});",
       ""
     ],
     "description": "React TypeScript functional component"

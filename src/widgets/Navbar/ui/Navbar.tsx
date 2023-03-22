@@ -1,7 +1,7 @@
 import { getUserAuthData, userActions } from 'entities/User';
 import { LoginModal } from 'features/AuthByUsername';
 import { loginActions } from 'features/AuthByUsername/model/slice/loginSlice';
-import { useCallback, useState } from 'react';
+import { memo, useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { classNames } from 'shared/lib/classNames/classNames';
@@ -12,7 +12,7 @@ interface INavbarProps {
   className?: string;
 }
 
-export function Navbar({ className }: INavbarProps) {
+export const Navbar = memo(({ className }: INavbarProps) => {
   const { t } = useTranslation();
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const authData = useSelector(getUserAuthData);
@@ -62,4 +62,4 @@ export function Navbar({ className }: INavbarProps) {
       </div>
     </div>
   );
-}
+});
