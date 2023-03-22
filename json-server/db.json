@@ -31,6 +31,13 @@
     }
   ],
   "profile": {
-    "name": "typicode"
+    "firstname": "Yurii",
+    "lastname": "Shchebetun",
+    "age": 31,
+    "currency": "UAH",
+    "country": "Ukraine",
+    "city": "Kyiv",
+    "user_role": "admin",
+    "avatar": "https://cdn.dribbble.com/users/187214/screenshots/2011963/media/e97d8786519b74ff46af512f062909f8.png"
   }
 }
