@@ -1,4 +1,3 @@
-import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { IUser, userActions } from 'entities/User';
 import i18n from 'shared/config/i18n/i18n';

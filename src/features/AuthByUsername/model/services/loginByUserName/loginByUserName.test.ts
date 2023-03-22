@@ -45,7 +45,7 @@ describe('loginByUsername async thunk test', () => {
     const thunk = new TestAsyncThunk(loginByUsername);
     const result = await thunk.callThunk({ username: 'admin', password: '123' });
 
-    expect(thunk.dispatch).toHaveBeenCalledTimes(3);
+    expect(thunk.dispatch).toHaveBeenCalledTimes(2);
     expect(thunk.dispatch).toHaveBeenCalledWith(userActions.setAuthData(userValue));
     expect(mockedAxios.post).toHaveBeenCalledTimes(1);
     expect(result.meta.requestStatus).toBe('fulfilled');

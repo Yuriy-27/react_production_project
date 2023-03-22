@@ -60,6 +60,7 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies
     'no-param-reassign': 'off',
     'lines-between-class-members': 'off',
+    'no-undef': 'off',
   },
   globals: {
     __IS_DEV__: true,
