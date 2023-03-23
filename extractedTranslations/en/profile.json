@@ -1,3 +1,15 @@
 {
-  "profile-page": ""
+  "cancel_edit": "",
+  "edit-profile": "",
+  "error_text": "",
+  "error_title": "",
+  "first_name": "",
+  "last_name": "",
+  "profile-page": "",
+  "profile_age": "",
+  "profile_avatar": "",
+  "profile_city": "",
+  "profile_currency": "",
+  "profile_userName": "",
+  "save_edit": ""
 }

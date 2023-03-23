@@ -1,6 +1,14 @@
 {
+  "cancel_edit": "Відмінити",
   "edit-profile": "Редагувати",
-  "first_name": "",
-  "last_name": "",
-  "profile-page": "Профіль користувача"
+  "error_text": "Спробуйте оновити сторінку",
+  "error_title": "Помилка завантаження даних профілю",
+  "first_name": "Імʼя",
+  "last_name": "Прізвище",
+  "profile-page": "Профіль користувача",
+  "profile_age": "Вік",
+  "profile_avatar": "Аватар",
+  "profile_city": "Місто",
+  "profile_userName": "Імʼя користувача",
+  "save_edit": "Зберегти"
 }

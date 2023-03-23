@@ -5,6 +5,7 @@
   cursor: pointer;
   padding: 8px 12px;
   color: var(--primary-color);
+  border-radius: 5px;
 }
 
 .clear {
@@ -20,6 +21,12 @@
   border: 1px solid var(--primary-color);
   background: none;
   color: var(--primary-color);
+}
+
+.outlined_red {
+  border: 1px solid var(--error-color);
+  background: none;
+  color: var(--error-color);
 }
 
 .background {

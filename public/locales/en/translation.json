@@ -1,6 +1,8 @@
 {
   "about_page_nav": "About us",
   "bug_button": "Report a bug",
+  "choose_country": "Choose country",
+  "choose_currency": "Choose currency",
   "decrement": "Decrement",
   "home_page_nav": "Home",
   "increment": "Increment",

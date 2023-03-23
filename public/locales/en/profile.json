@@ -1,6 +1,14 @@
 {
+  "cancel_edit": "Cancel",
   "edit-profile": "Edit",
+  "error_text": "Please, try reload the page",
+  "error_title": "Error loading profile data",
   "first_name": "First name",
   "last_name": "Last name",
-  "profile-page": "User profile"
+  "profile-page": "User profile",
+  "profile_age": "Age",
+  "profile_avatar": "Avatar",
+  "profile_city": "City",
+  "profile_userName": "Username",
+  "save_edit": "Save"
 }

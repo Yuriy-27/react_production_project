@@ -1,21 +1,8 @@
 .ProfileCard {
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  border: 1px solid var(--primary-color-variant);
-  border-radius: 5px;
-  box-shadow: 0 2px 3px #ccc;
   width: 100%;
-  text-align: center;
-  background-color: var(--secondary-bg-color);
-}
-
-.header {
-  display: flex;
-}
-
-.editButton {
-  margin-left: auto;
+  height: 100%;
 }
 
 .data {
@@ -28,4 +15,18 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.loading,
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatarWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }

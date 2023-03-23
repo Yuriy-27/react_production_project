@@ -1,0 +1,26 @@
+.SelectWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.SelectElement {
+  background: var(--primary-bg-color);
+  outline: none;
+  color: var(--primary-text-color);
+  border: 1px solid var(--primary-color-variant);
+  padding: 10px;
+  border-radius: 5px;
+
+  &:disabled {
+    border: 1px solid var(--secondary-bg-color);
+    opacity: 0.7;
+  }
+}
+
+.SelectOption {
+  background: var(--secondary-bg-color);
+  outline: none;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  padding: 2px;
+}

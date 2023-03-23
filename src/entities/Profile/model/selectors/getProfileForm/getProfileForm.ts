@@ -14,4 +14,4 @@ const defaultState: IProfile = {
   avatar: '',
 };
 
-export const getProfileData = (state: StateSchema) => state?.profile?.data || defaultState;
+export const getProfileForm = (state: StateSchema) => state?.profile?.form || defaultState;
