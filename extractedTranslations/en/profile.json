@@ -10,6 +10,16 @@
   "profile_avatar": "",
   "profile_city": "",
   "profile_currency": "",
+  "profile_invalidAge": "",
+  "profile_invalidAvatar": "",
+  "profile_invalidCity": "",
+  "profile_invalidCountry": "",
+  "profile_invalidCurrency": "",
+  "profile_invalidData": "",
+  "profile_invalidFirstName": "",
+  "profile_invalidLastName": "",
+  "profile_invalidUsername": "",
+  "profile_serverError": "",
   "profile_userName": "",
   "save_edit": ""
 }
