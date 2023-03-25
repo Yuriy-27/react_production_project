@@ -1,3 +1,3 @@
 import { StateSchema } from 'app/providers/StoreProvider';
 
-export const getProfileReadOnly = (state: StateSchema) => state?.profile?.readOnly || undefined;
+export const getProfileReadOnly = (state: StateSchema) => state?.profile?.readOnly;

@@ -28,8 +28,8 @@ export interface IProfile {
 export interface ProfileSchema {
   data?: IProfile;
   form?: IProfile;
-  isLoading: boolean;
+  isLoading?: boolean;
   error?: string;
-  readOnly: boolean;
+  readOnly?: boolean;
   validateErrors?: ValidateProfileError[];
 }
