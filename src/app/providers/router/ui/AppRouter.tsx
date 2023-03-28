@@ -22,11 +22,9 @@ function AppRouter() {
         <Route
           key={route.path}
           path={route.path}
-          element={(
-            <div className="content-wrapper">
-              {route.authOnly ? <RequireAuth>{element}</RequireAuth> : element}
-            </div>
-          )}
+          element={
+            route.authOnly ? <RequireAuth>{element}</RequireAuth> : element
+          }
         />
       );
     },
