@@ -3,17 +3,22 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
 import { AppRouter } from 'app/providers/router';
-import { useDispatch } from 'react-redux';
-import { userActions } from 'entities/User';
+import { useDispatch, useSelector } from 'react-redux';
+import { getUserInit, userActions } from 'entities/User';
 import { useTheme } from './providers/ThemeProvider';
 
 function App() {
   const { theme } = useTheme();
   const dispatch = useDispatch();
+  const userInit = useSelector(getUserInit);
 
   useEffect(() => {
     dispatch(userActions.initAuthData());
   }, [dispatch]);
+
+  if (!userInit) {
+    return null;
+  }
 
   return (
     <div className={classNames('app', {}, [theme])}>

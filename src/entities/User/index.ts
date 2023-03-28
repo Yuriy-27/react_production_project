@@ -1,4 +1,5 @@
-import { getUserAuthData } from './model/selectors/getUserAuthData';
+import { getUserAuthData } from './model/selectors/getUserAuthData/getUserAuthData';
+import { getUserInit } from './model/selectors/getUserInit/getUserInit';
 import { userActions, userReducer } from './model/slice/userSlice';
 import { IUser, IUserSchema } from './model/types/user';
 
@@ -8,4 +9,5 @@ export {
   IUser,
   IUserSchema,
   getUserAuthData,
+  getUserInit,
 };
