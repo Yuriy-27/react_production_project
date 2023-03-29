@@ -20,6 +20,7 @@
 
 .collapsed {
   width: var(--sidebar-collapsed-width);
+  z-index: 100;
 
   .Switchers {
     flex-direction: column;

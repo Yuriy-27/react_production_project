@@ -15,12 +15,10 @@
 }
 
 .title {
-  font-size: var(--font-size-l);
   color: var(--primary-color);
 }
 
 .text {
-  font-size: var(--font-size-m);
   color: var(--primary-color-variant);
 }
 
@@ -41,5 +39,25 @@
 
   .text {
     color: var(--error-color);
+  }
+}
+
+.size_m {
+  .title {
+    font-size: var(--font-size-l);
+  }
+
+  .text {
+    font-size: var(--font-size-m);
+  }
+}
+
+.size_l {
+  .title {
+    font-size: var(--font-size-xl);
+  }
+
+  .text {
+    font-size: var(--font-size-l);
   }
 }

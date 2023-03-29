@@ -1,6 +1,8 @@
 {
   "about-page": "about-page",
   "about_page_nav": "about_page_nav",
+  "article_details_error": "article_details_error",
+  "article_not_found": "article_not_found",
   "bug_button": "bug_button",
   "cancel_edit": "cancel_edit",
   "choose_country": "choose_country",

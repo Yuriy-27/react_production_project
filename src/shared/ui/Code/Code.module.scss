@@ -1,0 +1,32 @@
+.copyBtn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.Code {
+  position: relative;
+  font-family: monospace;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  padding: 20px;
+  background: var(--secondary-bg-color);
+  border-radius: 3px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  overflow: auto;
+  max-width: 100%;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-all;
+
+  &.secondary {
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+
+    &.copyBtn {
+      border: 1px solid var(--secondary-color);
+      color: var(--secondary-color);
+    }
+  }
+}

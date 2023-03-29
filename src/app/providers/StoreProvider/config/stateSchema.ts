@@ -2,6 +2,7 @@ import {
   AnyAction, CombinedState, EnhancedStore, Reducer, ReducersMapObject,
 } from '@reduxjs/toolkit';
 import { AxiosInstance } from 'axios';
+import { ArticleDetailsSchema } from 'entities/Article';
 import { CounterSchema } from 'entities/Counter';
 import { ProfileSchema } from 'entities/Profile';
 import { IUserSchema } from 'entities/User';
@@ -15,6 +16,7 @@ export interface StateSchema {
   // Async reducers
   loginForm?: ILoginSchema;
   profile?: ProfileSchema;
+  articleDetails?: ArticleDetailsSchema;
 }
 
 export type StateSchemaKeys = keyof StateSchema;

@@ -30,6 +30,12 @@ Outlined.args = {
   theme: ButtonTheme.OUTLINED,
 };
 
+export const OutlinedSecondary = Template.bind({});
+OutlinedSecondary.args = {
+  children: 'Text',
+  theme: ButtonTheme.OUTLINED_SECONDARY,
+};
+
 export const OutlinedDark = Template.bind({});
 OutlinedDark.args = {
   children: 'Text',
