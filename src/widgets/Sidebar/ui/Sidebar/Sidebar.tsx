@@ -5,9 +5,10 @@ import { LangSwitcher } from 'shared/ui/LangSwitcher';
 import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher';
 import MenuIcon from 'shared/assets/icons/menu.svg';
 import MenuOpenIcon from 'shared/assets/icons/menu_open.svg';
-import { SidebarItemsList } from 'widgets/Sidebar/model/items';
+import { useSelector } from 'react-redux';
 import cls from './Sidebar.module.scss';
 import { SidebarItem } from '../SidebarItem/SidebarItem';
+import { getSidebarItems } from '../../model/selectors/getSidebarItems';
 
 interface ISidebarProps {
   className?: string;
@@ -15,6 +16,7 @@ interface ISidebarProps {
 
 export const Sidebar = memo(({ className }: ISidebarProps) => {
   const [collapsed, setCollapsed] = useState<boolean>(false);
+  const sidebarItemsList = useSelector(getSidebarItems);
 
   const onToggle = () => {
     setCollapsed((prev) => !prev);
@@ -26,7 +28,7 @@ export const Sidebar = memo(({ className }: ISidebarProps) => {
       className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}
     >
       <nav className={cls.NavLinks}>
-        {SidebarItemsList.map((item) => (
+        {sidebarItemsList.map((item) => (
           <SidebarItem
             key={item.path}
             item={item}
