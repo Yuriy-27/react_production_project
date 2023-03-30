@@ -13,6 +13,7 @@
   "login_error": "You entered an incorrect login or password",
   "login_form": "Login form",
   "logout_button": "Logout",
+  "no_comments": "There are no comments",
   "not_found_page": "Page not found",
   "page_error": "Something went wrong! :(",
   "page_error_reload_button": "Reload the page",
