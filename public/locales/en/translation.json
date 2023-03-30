@@ -1,5 +1,6 @@
 {
   "about_page_nav": "About us",
+  "add_comment": "Add comment",
   "articles_page_nav": "Articles",
   "bug_button": "Report a bug",
   "choose_country": "Choose country",
@@ -19,6 +20,7 @@
   "page_error_reload_button": "Reload the page",
   "password": "Password",
   "profile_page_nav": "Profile",
+  "send": "Send",
   "short_lang_name": "EN",
   "test": "test example",
   "toggle": "Toggle",

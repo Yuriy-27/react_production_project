@@ -1,5 +1,6 @@
 {
   "about_page_nav": "Про нас",
+  "add_comment": "Додати коментар",
   "articles_page_nav": "Статті",
   "bug_button": "Повідомити про помилку",
   "choose_country": "Оберіть країну",
@@ -19,6 +20,7 @@
   "page_error_reload_button": "Перезавантажити сторінку",
   "password": "Пароль",
   "profile_page_nav": "Профіль",
+  "send": "Відправити",
   "short_lang_name": "Укр",
   "test": "Тестовий текст",
   "toggle": " переключити",

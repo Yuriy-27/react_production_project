@@ -6,7 +6,7 @@
   padding: 0.5rem;
   border: 1px solid var(--primary-color);
   border-radius: 4px;
-  background-color: #fff;
+  background-color: var(--secondary-bg-color);
 }
 
 .header {
@@ -20,4 +20,8 @@
 
 .text {
   margin-top: 10px;
+}
+
+.isLoading {
+  border: none;
 }

@@ -10,7 +10,7 @@ import cls from './CommentCard.module.scss';
 
 interface ICommentCardProps {
   className?: string;
-  comment: Comment;
+  comment?: Comment;
   isLoading?: boolean;
 }
 
@@ -19,7 +19,7 @@ export const CommentCard = memo((props: ICommentCardProps) => {
 
   if (isLoading) {
     return (
-      <div className={classNames(cls.CommentCard, {}, [className])}>
+      <div className={classNames(cls.CommentCard, {}, [className, cls.isLoading])}>
         <div className={cls.header}>
           <Skeleton width={30} height={30} border="50%" />
           <Skeleton className={cls.username} width={100} height={20} />
@@ -32,13 +32,13 @@ export const CommentCard = memo((props: ICommentCardProps) => {
   return (
     <div className={classNames(cls.CommentCard, {}, [className])}>
       <AppLink
-        to={`${RoutePaths.profile}${comment.user.id}`}
+        to={`${RoutePaths.profile}${comment?.user.id}`}
         className={cls.header}
       >
-        {comment.user.avatar && <Avatar size={30} className={cls.avatar} src={comment.user.avatar} />}
-        <Text className={cls.username} title={comment.user.username} />
+        {comment?.user.avatar && <Avatar size={30} className={cls.avatar} src={comment.user.avatar} />}
+        <Text className={cls.username} title={comment?.user.username} />
       </AppLink>
-      <Text className={cls.text} text={comment.text} />
+      <Text className={cls.text} text={comment?.text} />
     </div>
   );
 });

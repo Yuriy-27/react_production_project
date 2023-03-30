@@ -1,0 +1,14 @@
+.AddCommentForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  background-color: var(--secondary-bg-color);
+}
+
+.addCommentBtn {
+  margin-top: 10px;
+}

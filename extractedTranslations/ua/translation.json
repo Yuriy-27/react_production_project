@@ -1,6 +1,7 @@
 {
   "about-page": "about-page",
   "about_page_nav": "about_page_nav",
+  "add_comment": "add_comment",
   "article_details_error": "article_details_error",
   "article_not_found": "article_not_found",
   "bug_button": "bug_button",
@@ -55,6 +56,7 @@
   "profile_serverError": "profile_serverError",
   "profile_userName": "profile_userName",
   "save_edit": "save_edit",
+  "send": "send",
   "t(": "t(",
   "toggle": "toggle",
   "username": "username"

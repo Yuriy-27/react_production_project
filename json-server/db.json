@@ -29,7 +29,7 @@
       "username": "user",
       "password": "123",
       "role": "user",
-      "avatar": "https://cdn.dribbble.com/users/187214/screenshots/2011963/media/e97d8786519b74ff46af512f062909f8.png"
+      "avatar": "https://cdn.dribbble.com/users/2065683/screenshots/17634066/media/31324bb3fcb1865836065058f0599786.jpg?compress=1&resize=800x600&vertical=top"
     }
   ],
   "profile": [
@@ -47,14 +47,14 @@
     },
     {
       "id": "2",
-      "firstName": "Test",
-      "lastName": "User",
+      "firstName": "Frank",
+      "lastName": "Castle",
       "age": 30,
       "currency": "UAH",
       "country": "Ukraine",
       "city": "Kyiv",
       "user_role": "user",
-      "avatar": "https://cdn.dribbble.com/users/2065683/screenshots/17634066/media/31324bb3fcb1865836065058f0599786.jpg?compress=1&resize=800x600&vertical=top",
+      "avatar": "https://cdn.dribbble.com/users/2065683/screenshots/17634066/media/31324bb3fcb1865836065058f0599786.jpg",
       "userName": "Frank Castle"
     }
   ],
@@ -147,10 +147,34 @@
       "userId": "1"
     },
     {
-      "id": "2",
+      "id": "3",
       "text": "some comment 3",
       "articleId": "1",
       "userId": "2"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "New comment ",
+      "id": "O5OFxwa"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "Comment from another user",
+      "id": "ffciqoy"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "test comment",
+      "id": "LU903Nt"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "Hello world",
+      "id": "CIS9YJ5"
     }
   ]
 }

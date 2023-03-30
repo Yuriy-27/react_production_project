@@ -1,6 +1,7 @@
 {
   "about-page": "",
   "about_page_nav": "",
+  "add_comment": "",
   "article_details_error": "",
   "article_not_found": "",
   "articles_page_nav": "",
@@ -48,6 +49,7 @@
   "profile_serverError": "",
   "profile_userName": "",
   "save_edit": "",
+  "send": "",
   "short_lang_name": "",
   "test": "",
   "toggle": "",
