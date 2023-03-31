@@ -22,6 +22,10 @@ const article: Article = {
   img: 'https://cdn.vectorstock.com/i/1000x1000/74/38/water-wave-js-logo-swoosh-letter-js-logo-design-vector-37697438.webp',
   views: 1000,
   createdAt: '29.03.2023',
+  user: {
+    id: '1',
+    username: 'admin',
+  },
   type: [ArticleType.IT, ArticleType.NEWS],
   blocks: [
     {

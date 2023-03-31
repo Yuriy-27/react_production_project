@@ -1,0 +1,16 @@
+  .Card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: var(--card-bg-color);
+    transition: 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 10px 0 var(--primary-color-variant);
+      transform: scale(1.01);
+      z-index: 1;
+    }
+  }
