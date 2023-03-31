@@ -132,6 +132,420 @@
           ]
         }
       ]
+    },
+    {
+      "id": "2",
+      "title": "How to Code in TypeScript",
+      "subtitle": "Learn the basics of TypeScript coding",
+      "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--2ZfVeb_e--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/uf3a8y7xh8aroo95qocz.jpg",
+      "views": 100,
+      "userId": "1",
+      "createdAt": "2022-01-01",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "CODE",
+          "code": "console.log('Hello, world!');"
+        },
+        {
+          "id": "2",
+          "type": "TEXT",
+          "title": "Introduction",
+          "paragraphs": [
+            "TypeScript is a statically typed superset of JavaScript that compiles to plain JavaScript.",
+            "It is designed for large-scale applications and provides optional type annotations and other features to help developers catch errors early."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Breaking News: New COVID Variant Found",
+      "subtitle": "Experts warn of potential dangers and urge caution",
+      "img": "https://cdn.who.int/media/images/default-source/mca/mca-covid-19/coronavirus-2.tmb-479v.jpg",
+      "views": 500,
+      "userId": "2",
+      "createdAt": "2022-01-05",
+      "type": [
+        "NEWS",
+        "SCIENCE"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Summary",
+          "paragraphs": [
+            "Scientists have identified a new variant of the COVID virus.",
+            "The variant, known as B.1.1.529, has been detected in several countries and has a large number of mutations.",
+            "Experts are concerned that the new variant could be more transmissible and potentially more resistant to vaccines."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://cdn.the-scientist.com/assets/articleNo/68733/aImg/42077/variants-article-l.jpg",
+          "title": "Mutations in the new COVID variant"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "The Future of AI: Opportunities and Challenges",
+      "subtitle": "An in-depth look at the potential of artificial intelligence",
+      "img": "https://www.simplilearn.com/ice9/free_resources_article_thumb/Future_Of_Artificial_Intelligence.jpg",
+      "views": 200,
+      "userId": "2",
+      "createdAt": "2022-01-01",
+      "type": [
+        "SCIENCE",
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Introduction",
+          "paragraphs": [
+            "Artificial intelligence (AI) is rapidly changing the way we live and work.",
+            "With advances in machine learning and natural language processing, AI is becoming more intelligent and more human-like.",
+            "In this article, we'll explore the opportunities and challenges of AI and what the future holds."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://media.wired.com/photos/641b9a323491f4dd17124cb5/191:100/w_1280,c_limit/Sanctuary-AI-Robot-Still-Fast-Foward-Business.jpg",
+          "title": "AI robot in action"
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "const model = tf.sequential();\nmodel.add(tf.layers.dense({ units: 64, inputShape: [10], activation: 'relu' }));\nmodel.add(tf.layers.dense({ units: 1, activation: 'sigmoid' }));"
+        },
+        {
+          "id": "4",
+          "type": "TEXT",
+          "title": "The Future of AI",
+          "paragraphs": [
+            "AI has the potential to revolutionize many industries, from healthcare to finance to transportation.",
+            "However, there are also concerns about job displacement and ethical issues surrounding AI.",
+            "As AI becomes more advanced, it will be important for society to carefully consider the risks and benefits."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "10 Tips for Productive Remote Work",
+      "subtitle": "Maximize your productivity while working from home",
+      "img": "https://assets-global.website-files.com/61a05ff14c09ecacc06eec05/6318ee7fdcaa563f22593afc_10%20Tips%20to%20Maximize%20Your%20Working-from-Home%20Productivity.png",
+      "views": 500,
+      "userId": "2",
+      "createdAt": "2022-02-05",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Introduction",
+          "paragraphs": [
+            "With more and more people working remotely, it's important to stay productive and focused.",
+            "In this article, we'll share 10 tips for productive remote work."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "TEXT",
+          "title": "Tip #1: Establish a routine",
+          "paragraphs": [
+            "Set regular working hours and stick to them.",
+            "Create a routine that works for you and helps you stay focused."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "The Benefits of Meditation: How it Can Improve Your Life",
+      "subtitle": "Discover the power of meditation and learn how to incorporate it into your daily routine.",
+      "img": "https://media.npr.org/assets/img/2014/01/07/mindfulness_wide-b20c3525971d5796eba9ad993463fffe8faf2bcb-s1100-c50.jpg",
+      "views": 1000,
+      "userId": "1",
+      "createdAt": "2022-02-01",
+      "type": [
+        "HEALTH"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Introduction",
+          "paragraphs": [
+            "Meditation has been shown to have a variety of benefits, from reducing stress and anxiety to improving focus and concentration.",
+            "In this article, we'll explore some of the ways in which meditation can improve your life, and provide some tips on how to get started with a meditation practice."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "TEXT",
+          "title": "The Science of Meditation",
+          "paragraphs": [
+            "Meditation has been the subject of numerous scientific studies, which have found that it can have a positive impact on a wide range of mental and physical health outcomes.",
+            "For example, studies have found that meditation can reduce symptoms of depression and anxiety, lower blood pressure, and improve immune function."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "IMAGE",
+          "src": "https://media.meer.com/attachments/64d68d8f2d9c4303e6b20e8639ab8c43467bb63b/store/fill/1090/613/8b0f4037541b1af72147c0cd1b862207ac97cf9338d4009c3848695f145c/Meditating-at-sunset.jpg",
+          "title": "A person meditating"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "10 Tips for Better Time Management",
+      "subtitle": "Learn how to make the most of your time with these practical tips and strategies.",
+      "img": "https://www.timedoctor.com/blog/images/2021/02/time-management-strategies-585x329.jpg",
+      "views": 500,
+      "userId": "1",
+      "createdAt": "2022-02-05",
+      "type": [
+        "PRODUCTIVITY"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Introduction",
+          "paragraphs": [
+            "Time management is a critical skill that can help you be more productive and achieve your goals.",
+            "In this article, we'll share 10 practical tips and strategies for better time management, so you can make the most of your time and get more done."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "TEXT",
+          "title": "Tip #1: Prioritize Your Tasks",
+          "paragraphs": [
+            "One of the keys to effective time management is prioritization. Start each day by making a list of the tasks you need to accomplish, and then prioritize them based on their importance and urgency.",
+            "Focus on the most important tasks first, and work your way down the list."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "IMAGE",
+          "src": "https://www.asianefficiency.com/wp-content/uploads/2021/03/writing-lists-paper-scaled.jpg",
+          "title": "A to-do list with tasks prioritized by importance and urgency"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "The Benefits of Running: Why You Should Lace Up Your Sneakers",
+      "subtitle": "Discover the physical and mental benefits of running and how to get started.",
+      "img": "https://www.powertrain.com.au/media/wysiwyg/blog/Benefits_of_Running_Explained.png",
+      "views": 1000,
+      "userId": "1",
+      "createdAt": "2022-03-01",
+      "type": [
+        "SPORT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Introduction",
+          "paragraphs": [
+            "Running is a popular form of exercise that offers a wide range of benefits, from improving cardiovascular health to reducing stress and anxiety.",
+            "In this article, we'll explore some of the ways in which running can improve your life, and provide some tips on how to get started with a running routine."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "TEXT",
+          "title": "The Physical Benefits of Running",
+          "paragraphs": [
+            "Running is an excellent way to improve your cardiovascular health, build strength and endurance, and maintain a healthy weight.",
+            "It can also reduce your risk of chronic diseases such as heart disease, stroke, and diabetes."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "IMAGE",
+          "src": "https://cdn.mos.cms.futurecdn.net/JVTXrkBQt5asxTkDirSbWd.jpg",
+          "title": "A pair of running shoes"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "The Mental Benefits of Yoga for Athletes",
+      "subtitle": "Learn how practicing yoga can improve your mental game on and off the field.",
+      "img": "https://post.greatist.com/wp-content/uploads/sites/2/2019/04/Girl-Doing-Yoga-1200x628.jpg",
+      "views": 500,
+      "userId": "2",
+      "createdAt": "2022-03-05",
+      "type": [
+        "SPORT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Introduction",
+          "paragraphs": [
+            "Yoga is a popular practice that offers a wide range of mental and physical benefits, including improved flexibility, strength, and balance.",
+            "In this article, we'll focus on the mental benefits of yoga for athletes, including how it can help you stay focused, calm, and resilient on and off the field."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "TEXT",
+          "title": "Reducing Stress and Anxiety",
+          "paragraphs": [
+            "Yoga can help reduce stress and anxiety by promoting relaxation and mindfulness.",
+            "Athletes who practice yoga may be better equipped to manage the stress of competition and training, and may experience improved mental clarity and focus."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "IMAGE",
+          "src": "https://img.freepik.com/premium-photo/athlete-practicing-yoga-warrior-pose-healthy-lifestyle-young-adult-stretching-doing-sports-with-trees-background_671318-11.jpg?",
+          "title": "An athlete practicing a yoga pose"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "The Evolution of Football: How the Game Has Changed Over the Years",
+      "subtitle": "From leather balls to instant replays, football has come a long way since its early days.",
+      "img": "https://www.footballhistory.org/images/double_pic.jpg",
+      "views": 2000,
+      "userId": "1",
+      "createdAt": "2022-03-15",
+      "type": [
+        "SPORT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Introduction",
+          "paragraphs": [
+            "Football is one of the most popular sports in the world, with millions of fans tuning in to watch games every week.",
+            "But the game has changed a lot over the years, from the early days of leather balls and no helmets to the high-tech stadiums and instant replays of today."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "TEXT",
+          "title": "The Early Days of Football",
+          "paragraphs": [
+            "Football dates back to ancient times, with versions of the game played by the Greeks, Romans, and Chinese.",
+            "But it wasn't until the 19th century that the modern game began to take shape, with the establishment of rules and the use of a round ball."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "IMAGE",
+          "src": "https://www.re-thinkingthefuture.com/wp-content/uploads/2021/02/A3309-Image-3_Allianz-Arena-Munich-Germany_%C2%A9besthqwallpapers.com_.jpg",
+          "title": "A modern football stadium"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "The Importance of Nutrition for Football Players",
+      "subtitle": "Learn how proper nutrition can help football players perform at their best.",
+      "img": "https://cdn.shopify.com/s/files/1/1278/0725/articles/football-nutrition-creating-a-footballers-diet-451082_1920x.jpg",
+      "views": 1000,
+      "userId": "1",
+      "createdAt": "2022-03-20",
+      "type": [
+        "SPORT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Introduction",
+          "paragraphs": [
+            "Football is a physically demanding sport that requires strength, speed, and endurance.",
+            "Proper nutrition is essential for football players to perform at their best and stay healthy throughout the season."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "TEXT",
+          "title": "Fueling the Body for Performance",
+          "paragraphs": [
+            "Football players need to eat a balanced diet that includes plenty of protein, carbohydrates, and healthy fats.",
+            "They also need to stay hydrated and fuel their bodies with nutritious snacks before and after games and practices."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "IMAGE",
+          "src": "https://tds-images.thedailystar.net/sites/default/files/images/2022/11/21/player_diet_photo_ashif_ahmed_rudro.jpg",
+          "title": "A plate of nutritious food for football players"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "FC Barcelona: A History of Success",
+      "subtitle": "From Johan Cruyff to Lionel Messi, Barcelona has a rich history of talented players and championship victories.",
+      "img": "https://img-estaticos.atleticodemadrid.com/system/file6s/23277/medium2x2/Barcelona.jpg?1458306100",
+      "views": 5000,
+      "userId": "2",
+      "createdAt": "2022-04-01",
+      "type": [
+        "SPORT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Introduction",
+          "paragraphs": [
+            "FC Barcelona, also known as Barça, is one of the most successful football clubs in history.",
+            "With a long list of talented players and numerous championship victories, Barcelona has become a legendary team in the world of football."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "TEXT",
+          "title": "A Legacy of Greatness",
+          "paragraphs": [
+            "Barcelona has a rich history of talented players, from Johan Cruyff and Diego Maradona to Lionel Messi and Neymar.",
+            "The team has won numerous championships, including 26 La Liga titles, 31 Copa del Rey titles, and 5 UEFA Champions League titles.",
+            "Barcelona has also produced some of the greatest managers in football history, including Pep Guardiola and Johan Cruyff."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "IMAGE",
+          "src": "https://www.spain.info/export/sites/segtur/.content/imagenes/cabeceras-grandes/cataluna/camp-nou-barcelona-c-fcbarcelona.jpg",
+          "title": "The Camp Nou Stadium in Barcelona"
+        },
+        {
+          "id": "4",
+          "type": "TEXT",
+          "title": "The Future of Barcelona",
+          "paragraphs": [
+            "Barcelona has faced some challenges in recent years, including financial struggles and the departure of some key players.",
+            "But the team remains committed to its legacy of greatness and has a talented roster of players and coaches who are working hard to bring more championships to the club.",
+            "With the support of its loyal fans and a strong commitment to excellence, FC Barcelona will continue to be a dominant force in the world of football for years to come."
+          ]
+        }
+      ]
     }
   ],
   "comments": [

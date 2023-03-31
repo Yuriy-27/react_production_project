@@ -37,6 +37,9 @@ export enum ArticleType {
   NEWS = 'NEWS',
   SCIENCE = 'SCIENCE',
   ECONOMICS = 'ECONOMICS',
+  SPORT = 'SPORT',
+  PRODUCTIVITY = 'PRODUCTIVITY',
+  HEALTH = 'HEALTH',
 }
 
 export enum ArticleView {
