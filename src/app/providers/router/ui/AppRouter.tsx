@@ -1,8 +1,6 @@
-import { getUserAuthData } from 'entities/User';
 import {
-  memo, Suspense, useCallback, useMemo,
+  memo, Suspense, useCallback,
 } from 'react';
-import { useSelector } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
 
 import { AppRoutesProps, RouteConfig } from 'shared/config/routeConfig/routeConfig';
@@ -13,9 +11,10 @@ function AppRouter() {
   const renderWithWrapper = useCallback(
     (route: AppRoutesProps) => {
       const element = (
-        <div className="content-wrapper">
+        // eslint-disable-next-line react/jsx-no-useless-fragment
+        <>
           {route.element}
-        </div>
+        </>
       );
 
       return (

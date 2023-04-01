@@ -546,6 +546,459 @@
           ]
         }
       ]
+    },
+    {
+      "id": "13",
+      "title": "Lionel Messi: The Greatest Footballer of All Time?",
+      "subtitle": "With numerous individual awards and team victories, Lionel Messi has established himself as one of the greatest footballers in history.",
+      "img": "https://icdn.football-espana.net/wp-content/uploads/2022/12/argentina-v-france-final-fifa-world-cup-qatar-2022.jpg",
+      "views": 7500,
+      "userId": "2",
+      "createdAt": "2022-04-02",
+      "type": [
+        "SPORT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Early Life and Career",
+          "paragraphs": [
+            "Lionel Messi was born in Rosario, Argentina in 1987 and began playing football at a young age.",
+            "At the age of 13, he moved to Barcelona to join the club's youth academy, La Masia, where he quickly became a star player.",
+            "Messi made his professional debut for Barcelona in 2004 and has been a key player for the club ever since."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://media.gq.com/photos/610d6be4539f373b4ca1bd94/master/pass/GettyImages-955410340.jpg",
+          "title": "Messi playing for Barcelona"
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "Achievements and Records",
+          "paragraphs": [
+            "Messi has won numerous individual awards and team championships throughout his career.",
+            "He has won the Ballon d'Or award for the best player in the world a record 7 times, as well as numerous other individual awards.",
+            "With Barcelona, Messi has won 10 La Liga titles, 7 Copa del Rey titles, and 4 UEFA Champions League titles, among others.",
+            "Messi is also the all-time leading scorer for both Barcelona and the Argentine national team."
+          ]
+        },
+        {
+          "id": "4",
+          "type": "TEXT",
+          "title": "The Messi Style of Play",
+          "paragraphs": [
+            "Messi is known for his incredible speed, agility, and ball control on the field.",
+            "He is a master of dribbling and has a unique ability to weave through defenders and create scoring opportunities for himself and his teammates.",
+            "Messi is also known for his precision passing and powerful shots, which make him a dangerous player from anywhere on the field."
+          ]
+        },
+        {
+          "id": "5",
+          "type": "IMAGE",
+          "src": "https://library.sportingnews.com/2022-10/Lionel%20Messi%20Ballon%20d%27Or%20Trophies%20100922.jpg",
+          "title": "Messi with one of his Ballon d'Or trophies"
+        },
+        {
+          "id": "6",
+          "type": "TEXT",
+          "title": "Legacy and Impact",
+          "paragraphs": [
+            "Messi's incredible talent and success on the field have made him a role model and inspiration to countless fans around the world.",
+            "His impact on the sport of football and his legacy as one of the greatest players of all time will be remembered for years to come.",
+            "As Messi continues to play and achieve new milestones, fans around the world will be watching and cheering him on."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Next.js: The Future of React Web Development?",
+      "subtitle": "Next.js is a popular React framework that provides a powerful set of features for building modern, server-rendered web applications.",
+      "img": "https://images.ctfassets.net/c63hsprlvlya/IacLLeOBR5WCvdCPqKuff/6860b5cc464c4f54703a2befa3f706b4/nextjs3.webp",
+      "views": 3500,
+      "userId": "2",
+      "createdAt": "2022-04-03",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Introduction to Next.js",
+          "paragraphs": [
+            "Next.js is a React framework that provides a number of features for building modern web applications.",
+            "One of the key features of Next.js is server-side rendering, which allows for faster load times and improved SEO.",
+            "Next.js also provides built-in support for CSS modules, automatic code splitting, and hot module replacement, among other features."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "CODE",
+          "code": "import Head from 'next/head';\nimport styles from './styles.module.css';\n\nexport default function HomePage() {\n  return (\n    <div className={styles.container}>\n      <Head>\n        <title>Next.js App</title>\n        <meta name=\"description\" content=\"A sample Next.js app.\" />\n        <link rel=\"icon\" href=\"/favicon.ico\" />\n      </Head>\n      <h1>Welcome to my Next.js App!</h1>\n      <p>This is a sample Next.js app built with server-side rendering and CSS modules.</p>\n    </div>\n  );\n}"
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "Benefits of Next.js",
+          "paragraphs": [
+            "Next.js provides a number of benefits for web developers and organizations.",
+            "Server-side rendering improves load times and SEO, while CSS modules and automatic code splitting make it easier to build and maintain complex web applications.",
+            "Next.js also provides built-in support for TypeScript and GraphQL, making it a powerful framework for building modern web applications."
+          ]
+        },
+        {
+          "id": "4",
+          "type": "IMAGE",
+          "src": "https://res.cloudinary.com/practicaldev/image/fetch/s--cKCeDDBP--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://kennedyrose.com/static/images/webflow-on-next/webflow-on-next-diagram.gif",
+          "title": "Diagram of Next.js architecture"
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "title": "Getting Started with Next.js",
+          "paragraphs": [
+            "To get started with Next.js, you can use the `create-next-app` command-line tool to create a new project.",
+            "From there, you can use the built-in features and APIs of Next.js to build your web application.",
+            "There is also a large and active community of developers who contribute to the Next.js ecosystem, providing support and creating plugins and extensions to extend the functionality of the framework."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "React: The Most Popular JavaScript Library?",
+      "subtitle": "React is a popular JavaScript library for building user interfaces. It has become a go-to choice for developers around the world.",
+      "img": "https://www.devopsschool.com/blog/wp-content/uploads/2022/03/reactjs-benefits.jpg",
+      "views": 5000,
+      "userId": "1",
+      "createdAt": "2022-04-05",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Introduction to React",
+          "paragraphs": [
+            "React is a JavaScript library for building user interfaces.",
+            "It was developed by Facebook and released as an open-source project in 2013.",
+            "React uses a declarative approach to building UIs, which makes it easy to reason about and maintain code."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "CODE",
+          "code": "import React from 'react';\nimport ReactDOM from 'react-dom';\n\nfunction App() {\n  return (\n    <div>\n      <h1>Hello, world!</h1>\n      <p>Welcome to my React app.</p>\n    </div>\n  );\n}\n\nReactDOM.render(\n  <App />, document.getElementById('root')\n);"
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "Benefits of React",
+          "paragraphs": [
+            "React provides a number of benefits for web developers and organizations.",
+            "It uses a virtual DOM to improve performance and speed up updates to the UI.",
+            "React also provides a number of tools and libraries, such as React Router and Redux, which make it easier to build complex web applications."
+          ]
+        },
+        {
+          "id": "4",
+          "type": "IMAGE",
+          "src": "https://i.ytimg.com/vi/EKA_9p2axSM/maxresdefault.jpg",
+          "title": "Diagram of React architecture"
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "title": "Getting Started with React",
+          "paragraphs": [
+            "To get started with React, you can use the `create-react-app` command-line tool to create a new project.",
+            "From there, you can use the built-in features and APIs of React to build your UI components and connect them to data and other libraries.",
+            "There is also a large and active community of developers who contribute to the React ecosystem, providing support and creating plugins and extensions to extend the functionality of the library."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Angular: The Comprehensive Front-End Framework",
+      "subtitle": "Angular is a front-end web application framework that provides a comprehensive approach to building web apps.",
+      "img": "https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/1096616/retina_1708x683_cover-top-18-most-common-angularjs-developer-mistakes-41f9ad303a51db70e4a5204e101e7414.png",
+      "views": 6000,
+      "userId": "2",
+      "createdAt": "2022-05-02",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Introduction to Angular",
+          "paragraphs": [
+            "Angular is a TypeScript-based front-end web application framework that was developed by Google.",
+            "It provides a comprehensive set of features for building web apps, including templates, forms, routing, and data binding.",
+            "Angular uses a component-based architecture, which makes it easy to organize and maintain code."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "CODE",
+          "code": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  template: `\n    <h1>Hello, {{ name }}!</h1>\n    <p>Welcome to my Angular app.</p>\n  `\n})\nexport class AppComponent {\n  name = 'world';\n}"
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "Benefits of Angular",
+          "paragraphs": [
+            "Angular provides a number of benefits for web developers and organizations.",
+            "It includes a comprehensive set of features for building web apps, which reduces the need for external libraries and tools.",
+            "Angular also provides a powerful command-line interface (CLI) tool, which makes it easy to create, build, and deploy Angular apps."
+          ]
+        },
+        {
+          "id": "4",
+          "type": "IMAGE",
+          "src": "https://cdn.educba.com/academy/wp-content/uploads/2019/12/angular-2-architecture-1.png",
+          "title": "Diagram of Angular architecture"
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "title": "Getting Started with Angular",
+          "paragraphs": [
+            "To get started with Angular, you can use the `ng new` command-line tool to create a new project.",
+            "From there, you can use the built-in features and APIs of Angular to build your UI components and connect them to data and other libraries.",
+            "There is also a large and active community of developers who contribute to the Angular ecosystem, providing support and creating plugins and extensions to extend the functionality of the framework."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "Vue.js: The Progressive JavaScript Framework",
+      "subtitle": "Vue.js is a lightweight and flexible front-end framework for building user interfaces.",
+      "img": "https://timeweb.com/ru/community/article/1d/1d959c23e81024374895da086675b298.jpg",
+      "views": 4500,
+      "userId": "2",
+      "createdAt": "2022-06-15",
+      "type": [
+        "IT",
+        "WEB DEVELOPMENT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Introduction to Vue.js",
+          "paragraphs": [
+            "Vue.js is a progressive JavaScript framework that is designed to be incrementally adoptable.",
+            "It can be used for building everything from small, simple projects to large, complex applications.",
+            "Vue.js provides a number of features that make it easy to build user interfaces, including reactive data binding, computed properties, and custom directives."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "CODE",
+          "code": "<template>\n  <div>\n    <h1>{{ message }}</h1>\n    <p>Welcome to my Vue.js app.</p>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      message: 'Hello, world!'\n    }\n  }\n}\n</script>"
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "Benefits of Vue.js",
+          "paragraphs": [
+            "Vue.js provides a number of benefits for web developers and organizations.",
+            "It is lightweight and flexible, which makes it easy to integrate with existing projects and technologies.",
+            "Vue.js also provides a clear and concise syntax, which makes it easy to learn and use, even for developers who are new to the framework."
+          ]
+        },
+        {
+          "id": "4",
+          "type": "IMAGE",
+          "src": "https://www.appventurez.com/wp-content/uploads/2020/07/architecture-of-vue.js-app-1.jpg",
+          "title": "Diagram of Vue.js architecture"
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "title": "Getting Started with Vue.js",
+          "paragraphs": [
+            "To get started with Vue.js, you can include the Vue.js library in your project and start building UI components using the Vue.js syntax.",
+            "Vue.js also provides a number of tools and plugins to help you build and manage your project, including the Vue CLI tool, which makes it easy to create, build, and deploy Vue.js apps.",
+            "There is also a large and active community of developers who contribute to the Vue.js ecosystem, providing support and creating plugins and extensions to extend the functionality of the framework."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "NBA: The Most Popular Basketball League in the World",
+      "subtitle": "The National Basketball Association (NBA) is a men's professional basketball league in North America.",
+      "img": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2022/02/02/16437899001758.jpg",
+      "views": 7800,
+      "userId": "1",
+      "createdAt": "2022-09-01",
+      "type": [
+        "SPORT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Overview of NBA",
+          "paragraphs": [
+            "The NBA is one of the four major professional sports leagues in North America, and is widely regarded as the premier men's professional basketball league in the world.",
+            "It consists of 30 teams, with 29 teams from the United States and one team from Canada, and is divided into two conferences: the Eastern Conference and the Western Conference.",
+            "Each team plays 82 regular-season games, followed by a playoff tournament to determine the NBA champion."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "http://cdn.shopify.com/s/files/1/0534/2022/8758/articles/map.jpg",
+          "title": "NBA teams"
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "History of NBA",
+          "paragraphs": [
+            "The NBA was founded in 1946 as the Basketball Association of America (BAA), and merged with the National Basketball League (NBL) in 1949 to form the NBA.",
+            "Since then, the league has grown in popularity and has produced many legendary players, such as Michael Jordan, Magic Johnson, and Kobe Bryant.",
+            "The NBA has also played a significant role in popular culture, with many basketball-themed movies, TV shows, and video games being released over the years."
+          ]
+        },
+        {
+          "id": "4",
+          "type": "CODE",
+          "code": "console.log('NBA is the best basketball league in the world!');"
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "title": "Current State of NBA",
+          "paragraphs": [
+            "Today, the NBA continues to be one of the most popular and lucrative sports leagues in the world, with a global fan base and a strong presence on social media.",
+            "The league has also been at the forefront of social justice and political activism, with many players and coaches speaking out on issues such as racism, police brutality, and gender equality.",
+            "As the NBA continues to evolve and adapt to changing times, it remains one of the most exciting and dynamic sports leagues in the world."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "UEFA Champions League: The Pinnacle of European Club Football",
+      "subtitle": "The UEFA Champions League is an annual football club competition organised by the Union of European Football Associations (UEFA) and contested by the top-division European clubs.",
+      "img": "https://m.media-amazon.com/images/M/MV5BNzkyNjYzZTItZTA1OC00ZTI5LThmMjUtNDA5YTZjOGYwNTUzXkEyXkFqcGdeQXVyNDg4MjkzNDk@._V1_FMjpg_UX1000_.jpg",
+      "views": 12000,
+      "userId": "1",
+      "createdAt": "2022-10-15",
+      "type": [
+        "SPORT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Overview of UEFA Champions League",
+          "paragraphs": [
+            "The UEFA Champions League is widely regarded as the most prestigious club competition in the world, and attracts millions of viewers from around the globe.",
+            "It involves the top club teams from the top-division leagues in Europe, including the English Premier League, Spanish La Liga, Italian Serie A, and German Bundesliga.",
+            "The competition consists of a group stage followed by knockout rounds, culminating in a final match where the winner is crowned the European champion."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://editorial.uefa.com/resources/0276-1554ec54bb9a-c245598c7ef5-1000/manchester_city_v_chelsea_-_uefa_champions_league_final_previews.jpeg",
+          "title": "UEFA Champions League Trophy"
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "History of UEFA Champions League",
+          "paragraphs": [
+            "The UEFA Champions League was first established in 1955 as the European Champion Clubs' Cup, and was rebranded as the UEFA Champions League in 1992.",
+            "It has since become one of the most popular and lucrative sports competitions in the world, with many of the top football clubs competing for the title every year.",
+            "The competition has also produced many legendary players, such as Lionel Messi, Cristiano Ronaldo, and Zinedine Zidane."
+          ]
+        },
+        {
+          "id": "4",
+          "type": "CODE",
+          "code": "console.log('UEFA Champions League is the ultimate club football competition in the world!');"
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "title": "Current State of UEFA Champions League",
+          "paragraphs": [
+            "Today, the UEFA Champions League remains as popular as ever, with millions of fans tuning in to watch the matches and follow their favourite clubs.",
+            "The competition has also evolved to include more teams and matches, with the introduction of a play-off round and a third qualifying round in recent years.",
+            "As the UEFA Champions League continues to grow and adapt to changing times, it remains the pinnacle of European club football and the ultimate prize for football clubs around the world."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "FIFA World Cup: The Greatest Show on Earth",
+      "subtitle": "The FIFA World Cup is the most prestigious international football tournament, organized by the Fédération Internationale de Football Association (FIFA) every four years, with the participation of the best national teams from all over the world.",
+      "img": "https://www.isspf.com/wp-content/uploads/2022/09/shutterstock_2190840355-scaled.jpg",
+      "views": 15000,
+      "userId": "2",
+      "createdAt": "2022-11-20",
+      "type": [
+        "SPORT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Overview of FIFA World Cup",
+          "paragraphs": [
+            "The FIFA World Cup is the biggest and most prestigious event in international football, with the participation of 32 national teams from all over the world.",
+            "It is held every four years, and is considered to be the pinnacle of achievement for any footballer and national team.",
+            "The tournament is watched by billions of people worldwide, and is a major platform for national pride and international competition."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://e3.365dm.com/22/12/2048x1152/skynews-argentina-lionel-messi_6000532.jpg",
+          "title": "FIFA World Cup Trophy"
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "History of FIFA World Cup",
+          "paragraphs": [
+            "The first FIFA World Cup was held in 1930 in Uruguay, with only 13 teams participating.",
+            "Since then, the tournament has grown in size and popularity, with the most recent edition held in Russia in 2018 with 32 teams participating.",
+            "Some of the most iconic moments in football history have taken place at the FIFA World Cup, including Diego Maradona's 'Hand of God' goal and Zinedine Zidane's infamous headbutt."
+          ]
+        },
+        {
+          "id": "4",
+          "type": "CODE",
+          "code": "console.log('FIFA World Cup is the biggest stage for national teams to showcase their talent and compete for the ultimate prize in football!');"
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "title": "Current State of FIFA World Cup",
+          "paragraphs": [
+            "The FIFA World Cup remains as popular as ever, with billions of viewers tuning in to watch the matches and support their favourite teams.",
+            "The next edition of the tournament is scheduled to be held in Qatar in 2022, and is expected to be one of the most exciting and competitive editions yet.",
+            "As the FIFA World Cup continues to evolve and attract new generations of football fans, it remains the greatest show on earth and the ultimate prize for national teams around the world."
+          ]
+        }
+      ]
     }
   ],
   "comments": [

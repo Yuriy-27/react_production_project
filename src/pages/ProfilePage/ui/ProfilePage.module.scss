@@ -1,12 +1,16 @@
 .ProfilePage {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
-  padding: 20px 5%;
   color: var(--primary-color);
-  background-color: var(--secondary-bg-color);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.profileWrapper {
   border-radius: 5px;
   box-shadow: rgba(0 0 0 / 10%) 0 10px 15px -3px,
     rgba(0 0 0 / 5%) 0 4px 6px -2px;
+  background-color: var(--secondary-bg-color);
+  padding: 20px;
+  flex-grow: 1;
 }

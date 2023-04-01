@@ -12,6 +12,7 @@ import { Text } from 'shared/ui/Text/Text';
 import { AddCommentForm } from 'features/AddCommentForm';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { RoutePaths } from 'shared/config/routeConfig/routeConfig';
+import { Page } from 'shared/ui/Page/Page';
 import { fetchCommentsByArticleId } from '../../model/services/fetchCommentsByArticleId/fetchCommentsByArticleId';
 import { getArticleCommentsIsLoading } from '../../model/selectors/comments';
 import { articleDetailsCommentsReducer, getArticleComments } from '../../model/slices/articleDetailsCommentsSlice';
@@ -62,7 +63,7 @@ const ArticleDetailsPage = (props: IArticleDetailsPageProps) => {
 
   return (
     <DynamicModuleLoader reducers={reducers} removeReducerAfterUnmount>
-      <div className={classNames(cls.ArticleDetailsPage, {}, [className])}>
+      <Page className={classNames(cls.ArticleDetailsPage, {}, [className])}>
         <Button
           theme={ButtonTheme.OUTLINED_SECONDARY}
           onClick={onBackToList}
@@ -76,7 +77,7 @@ const ArticleDetailsPage = (props: IArticleDetailsPageProps) => {
           isLoading={isLoading}
           comments={comments}
         />
-      </div>
+      </Page>
     </DynamicModuleLoader>
   );
 };
