@@ -1,7 +1,9 @@
 import {
   AnyAction, combineReducers, Reducer, ReducersMapObject,
 } from '@reduxjs/toolkit';
-import { ReducerManager, StateSchema, StateSchemaKeys } from './stateSchema';
+import {
+  ReducerManager, StateSchema, StateSchemaKeys,
+} from './stateSchema';
 
 export function createReducerManager(initialReducers: ReducersMapObject<StateSchema>): ReducerManager {
   // Create an object which maps keys to reducers
@@ -15,7 +17,6 @@ export function createReducerManager(initialReducers: ReducersMapObject<StateSch
 
   return {
     getReducerMap: () => reducers,
-
     // The root reducer function exposed by this object
     // This will be passed to the store
     reduce: (state: StateSchema, action: AnyAction) => {
