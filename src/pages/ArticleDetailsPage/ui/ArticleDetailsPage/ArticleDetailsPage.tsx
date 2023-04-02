@@ -65,7 +65,7 @@ const ArticleDetailsPage = (props: IArticleDetailsPageProps) => {
     <DynamicModuleLoader reducers={reducers} removeReducerAfterUnmount>
       <Page className={classNames(cls.ArticleDetailsPage, {}, [className])}>
         <Button
-          theme={ButtonTheme.OUTLINED_SECONDARY}
+          theme={ButtonTheme.OUTLINED}
           onClick={onBackToList}
         >
           {t('back_to_list')}

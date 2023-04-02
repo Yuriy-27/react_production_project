@@ -12,6 +12,7 @@
 .LIST {
   .views {
     margin-left: auto;
+    color: var(--primary-color);
   }
 
   .header {
@@ -21,10 +22,16 @@
 
   .username {
     margin-left: 8px;
+    color: var(--primary-color);
   }
 
   .date {
     margin-left: auto;
+    color: var(--primary-color);
+  }
+
+  .types {
+    color: var(--primary-color-variant);
   }
 
   .title {
@@ -61,6 +68,10 @@
     top: 4px;
     right: 4px;
     display: none;
+  }
+
+  .types {
+    color: var(--primary-color-variant);
   }
 
   &:hover {

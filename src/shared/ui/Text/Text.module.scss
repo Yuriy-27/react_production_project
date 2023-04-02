@@ -18,20 +18,6 @@
   color: var(--primary-color);
 }
 
-.text {
-  color: var(--primary-color);
-}
-
-.secondary {
-  .title {
-    color: var(--secondary-color);
-  }
-
-  .text {
-    color: var(--secondary-color-variant);
-  }
-}
-
 .error {
   .title {
     color: var(--error-color);

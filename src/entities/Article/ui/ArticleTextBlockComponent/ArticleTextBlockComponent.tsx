@@ -16,9 +16,9 @@ export const ArticleTextBlockComponent = memo((props: IArticleTextBlockComponent
 
   return (
     <div className={classNames(cls.ArticleTextBlockComponent, {}, [className])}>
-      {block.title && <Text theme={TextTheme.SECONDARY} className={cls.title} title={block.title} />}
+      {block.title && <Text className={cls.title} title={block.title} />}
       {block.paragraphs.map((paragraph, index) => (
-        <Text theme={TextTheme.SECONDARY} key={index} text={paragraph} className={cls.paragraph} />
+        <Text key={index} text={paragraph} className={cls.paragraph} />
       ))}
     </div>
   );

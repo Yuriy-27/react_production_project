@@ -98,7 +98,6 @@ export const ArticleDetails = memo((props: IArticleDetailsProps) => {
   } else if (error) {
     content = (
       <Text
-        theme={TextTheme.SECONDARY}
         align={TextAlign.CENTER}
         title={t('article_details_error')}
       />
@@ -112,18 +111,17 @@ export const ArticleDetails = memo((props: IArticleDetailsProps) => {
           src={article?.img}
         />
         <Text
-          theme={TextTheme.SECONDARY}
           title={article?.title}
           text={article?.subtitle}
           size={TextSize.L}
         />
         <div className={cls.articleInfo}>
-          <Icon theme={IconTheme.SECONDARY} className={cls.icon} Svg={EyeIcon} />
-          <Text theme={TextTheme.SECONDARY} text={String(article?.views)} />
+          <Icon theme={IconTheme.PRIMARY} className={cls.icon} Svg={EyeIcon} />
+          <Text text={String(article?.views)} />
         </div>
         <div className={cls.articleInfo}>
-          <Icon theme={IconTheme.SECONDARY} className={cls.icon} Svg={CalendarIcon} />
-          <Text theme={TextTheme.SECONDARY} text={article?.createdAt} />
+          <Icon theme={IconTheme.PRIMARY} className={cls.icon} Svg={CalendarIcon} />
+          <Text text={article?.createdAt} />
         </div>
         {article?.blocks.map(renderArticleBlock)}
       </>

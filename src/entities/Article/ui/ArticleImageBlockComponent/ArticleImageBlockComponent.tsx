@@ -17,7 +17,6 @@ export const ArticleImageBlockComponent = memo((props: IArticleImageBlockCompone
       <img alt={block.title} className={cls.img} src={block.src} />
       {block.title && (
         <Text
-          theme={TextTheme.SECONDARY}
           className={cls.title}
           align={TextAlign.CENTER}
           title={block.title}
