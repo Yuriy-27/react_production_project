@@ -4,6 +4,7 @@ import {
 import { counterReducer } from 'entities/Counter';
 import { userReducer } from 'entities/User';
 import { $api } from 'shared/api/api';
+import { scrollPositionReducer } from 'features/ScrollPosition';
 import { createReducerManager } from './reducerManager';
 import { StateSchema } from './stateSchema';
 
@@ -15,6 +16,7 @@ export function createReduxStore(
     ...asyncReducers,
     counter: counterReducer,
     user: userReducer,
+    scrollPosition: scrollPositionReducer,
   };
 
   const reducerManager = createReducerManager(rootReducers);

@@ -8,12 +8,14 @@ import { ProfileSchema } from 'entities/Profile';
 import { IUserSchema } from 'entities/User';
 import { AddCommentFormSchema } from 'features/AddCommentForm';
 import { ILoginSchema } from 'features/AuthByUsername';
+import { ScrollPositionSchema } from 'features/ScrollPosition';
 import { ArticleDetailsCommentsSchema } from 'pages/ArticleDetailsPage';
 import { ArticlesPageSchema } from 'pages/ArticlesPage';
 
 export interface StateSchema {
   counter: CounterSchema;
   user: IUserSchema;
+  scrollPosition: ScrollPositionSchema;
 
   // Async reducers
   loginForm?: ILoginSchema;
