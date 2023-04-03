@@ -74,7 +74,7 @@ export const ArticleListItem = memo((props: IArticleListItemProps) => {
 
   return (
     <div className={classNames(cls.ArticleListItem, {}, [className, cls[viewMode]])}>
-      <Card onClick={onOpenArticle}>
+      <Card onClick={onOpenArticle} className={cls.card}>
         <div className={cls.imageWrapper}>
           <img src={article.img} alt={article.title} className={cls.img} />
           <Text text={article.createdAt} className={cls.date} />

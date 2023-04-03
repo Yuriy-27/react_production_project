@@ -1,8 +1,6 @@
 .ArticleList {
   display: flex;
-  justify-content: center;
   width: 100%;
-  box-sizing: border-box;
 }
 
 .LIST {
@@ -15,9 +13,10 @@
 
 .GRID {
   flex-wrap: wrap;
+  gap: 30px;
+}
 
-  .card {
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
+.noArticles {
+  width: 100%;
+  text-align: center;
 }

@@ -1,23 +1,23 @@
-import { ChangeEvent, memo, useMemo } from 'react';
+import { ChangeEvent, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './Select.module.scss';
 
-export interface SelectOptions {
-  value: string;
+export interface SelectOptions<T extends string> {
+  value: T;
   label: string;
 }
 
-interface ISelectProps {
+interface ISelectProps<T extends string> {
   className?: string;
   label?: string;
-  options?: SelectOptions[];
-  value?: string;
-  onChange?: (value: string) => void;
+  options?: SelectOptions<T>[];
+  value?: T;
+  onChange?: (value: T) => void;
   readOnly?: boolean;
 }
 
-export const Select = memo((props: ISelectProps) => {
+export const Select = <T extends string>(props: ISelectProps<T>) => {
   const {
     className,
     label,
@@ -29,7 +29,7 @@ export const Select = memo((props: ISelectProps) => {
   const { t } = useTranslation();
 
   const onChangeHandler = (event: ChangeEvent<HTMLSelectElement>) => {
-    onChange?.(event.target.value);
+    onChange?.(event.target.value as T);
   };
 
   const optionsList = useMemo(() => options?.map((item) => (
@@ -49,4 +49,4 @@ export const Select = memo((props: ISelectProps) => {
       </select>
     </div>
   );
-});
+};

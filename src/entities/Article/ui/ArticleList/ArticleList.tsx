@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
+import { Text, TextAlign } from 'shared/ui/Text/Text';
 import { Article, ArticleView } from '../../model/types/article';
 import { ArticleListItem } from '../ArticleListItem/ArticleListItem';
 import { ArticleListItemSkeleton } from '../ArticleListItem/ArticleListItemSkeleton';
@@ -30,7 +31,7 @@ export const ArticleList = memo((props: IArticleListProps) => {
     isLoading = true,
     viewMode = ArticleView.GRID,
   } = props;
-  const { t } = useTranslation();
+  const { t } = useTranslation('article');
 
   const renderArticles = (article: Article) => (
     <ArticleListItem
@@ -40,6 +41,18 @@ export const ArticleList = memo((props: IArticleListProps) => {
       className={cls.card}
     />
   );
+
+  if (!isLoading && !articles.length) {
+    return (
+      <div className={classNames(cls.ArticleList, {}, [className, cls[viewMode]])}>
+        <Text
+          className={cls.noArticles}
+          title={t('no_articles')}
+          align={TextAlign.CENTER}
+        />
+      </div>
+    );
+  }
 
   return (
     <div className={classNames(cls.ArticleList, {}, [className, cls[viewMode]])}>

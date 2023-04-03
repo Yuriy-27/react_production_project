@@ -4,11 +4,6 @@
   width: 100%;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-}
-
 .LIST {
   .views {
     margin-left: auto;
@@ -68,16 +63,11 @@
     top: 4px;
     right: 4px;
     display: none;
+    color: var(--primary-color);
   }
 
   .types {
     color: var(--primary-color-variant);
-  }
-
-  &:hover {
-    .date {
-      display: block;
-    }
   }
 
   .imageWrapper {
@@ -119,5 +109,22 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 var(--primary-color-variant);
+    transform: scale(1.01);
+    z-index: 1;
+
+    .date {
+      display: block;
+    }
   }
 }
