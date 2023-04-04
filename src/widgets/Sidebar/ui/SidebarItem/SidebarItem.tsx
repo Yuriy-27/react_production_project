@@ -29,7 +29,7 @@ export const SidebarItem = memo((props: ISidebarItemProps) => {
       className={cls.SidebarItem}
     >
       <item.Icon className={classNames(cls.linkIcon, { [cls.collapsed]: collapsed })} fill="var(--primary-color)" />
-      {!collapsed && <Text size={TextSize.L} text={t(item.text)} />}
+      {!collapsed && <Text className={cls.linkText} text={t(item.text)} />}
     </AppLink>
   );
 });

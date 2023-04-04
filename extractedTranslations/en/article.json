@@ -1,7 +1,11 @@
 {
+  "article_create_new": "",
   "article_details_error": "",
+  "article_edit": "",
   "article_not_found": "",
   "back_to_list": "",
   "comments": "",
-  "no_articles": ""
+  "edit_article": "",
+  "no_articles": "",
+  "recommendations": ""
 }
