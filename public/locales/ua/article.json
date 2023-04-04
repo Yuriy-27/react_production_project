@@ -1,8 +1,11 @@
 {
+  "article_create_new": "Створення нової статті",
   "article_details_error": "Помилка при завантаженні статті",
+  "article_edit": "Рудагування статті",
   "article_not_found": "Статтю не знайдено",
   "back_to_list": "Назад до списку",
   "comments": "Коментарі",
+  "edit_article": "Рудагувати",
   "no_articles": "Статті відсутні",
   "recommendations": "Рекомендовані статті"
 }

@@ -6,6 +6,9 @@ import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
+import { Text } from 'shared/ui/Text/Text';
+import { AppLink } from 'shared/ui/AppLink/AppLink';
+import { RoutePaths } from 'shared/config/routeConfig/routeConfig';
 import cls from './Navbar.module.scss';
 
 interface INavbarProps {
@@ -34,15 +37,23 @@ export const Navbar = memo(({ className }: INavbarProps) => {
   if (authData) {
     return (
       <header className={classNames(cls.Navbar, {}, [className])}>
-        <div className={cls.links}>
-          <Button
-            theme={ButtonTheme.CLEAR}
-            className={cls.link}
-            onClick={onLogout}
-          >
-            {t('logout_button')}
-          </Button>
-        </div>
+        <Text
+          className={cls.appName}
+          title="Awesome App"
+        />
+        <AppLink
+          to={RoutePaths.article_create}
+          className={cls.createArticleLink}
+        >
+          {t('create_article_link')}
+        </AppLink>
+        <Button
+          theme={ButtonTheme.CLEAR}
+          className={cls.link}
+          onClick={onLogout}
+        >
+          {t('logout_button')}
+        </Button>
       </header>
     );
   }

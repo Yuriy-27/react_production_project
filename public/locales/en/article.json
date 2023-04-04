@@ -1,8 +1,11 @@
 {
+  "article_create_new": "Create new article",
   "article_details_error": "Error loading the article",
+  "article_edit": "Article edit",
   "article_not_found": "Article not found",
   "back_to_list": "Back to list",
   "comments": "Comments",
+  "edit_article": "Edit",
   "no_articles": "There are no articles",
   "recommendations": "Related articles"
 }

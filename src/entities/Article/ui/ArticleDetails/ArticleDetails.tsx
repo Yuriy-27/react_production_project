@@ -111,6 +111,7 @@ export const ArticleDetails = memo((props: IArticleDetailsProps) => {
           src={article?.img}
         />
         <Text
+          className={cls.title}
           title={article?.title}
           text={article?.subtitle}
           size={TextSize.L}

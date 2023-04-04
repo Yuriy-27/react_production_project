@@ -1,9 +1,10 @@
 import { getUserAuthData } from 'entities/User';
-import { FC, memo } from 'react';
+import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { AppLink, AppLInkTheme } from 'shared/ui/AppLink/AppLink';
+import { Text, TextSize } from 'shared/ui/Text/Text';
 import { SidebarItemType } from '../../model/types/sidebar';
 import cls from './SidebarItem.module.scss';
 
@@ -28,7 +29,7 @@ export const SidebarItem = memo((props: ISidebarItemProps) => {
       className={cls.SidebarItem}
     >
       <item.Icon className={classNames(cls.linkIcon, { [cls.collapsed]: collapsed })} fill="var(--primary-color)" />
-      {!collapsed && <span>{t(item.text)}</span>}
+      {!collapsed && <Text size={TextSize.L} text={t(item.text)} />}
     </AppLink>
   );
 });

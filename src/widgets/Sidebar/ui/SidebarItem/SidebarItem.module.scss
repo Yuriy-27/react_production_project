@@ -1,7 +1,7 @@
 .SidebarItem {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 
   &:last-child {
     margin-bottom: 0;
@@ -14,4 +14,8 @@
   &.collapsed {
     margin-right: 0;
   }
+}
+
+a {
+  text-decoration: none;
 }
