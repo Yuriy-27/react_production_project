@@ -41,7 +41,7 @@ module.exports = {
     'max-len': [
       'error',
       {
-        code: 120,
+        code: 130,
         ignoreComments: true,
       },
     ],
@@ -62,6 +62,7 @@ module.exports = {
     'no-param-reassign': 'off',
     'lines-between-class-members': 'off',
     'no-undef': 'off',
+    'arrow-body-style': 'off',
   },
   globals: {
     __IS_DEV__: true,

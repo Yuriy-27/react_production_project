@@ -1,4 +1,4 @@
-import { memo } from 'react';
+import { HTMLAttributeAnchorTarget, memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Text, TextAlign } from 'shared/ui/Text/Text';
@@ -12,6 +12,7 @@ interface IArticleListProps {
   articles: Article[];
   isLoading?: boolean;
   viewMode?: ArticleView;
+  target?: HTMLAttributeAnchorTarget;
 }
 
 const getSkeletons = (viewMode: ArticleView) => new Array(viewMode === ArticleView.GRID ? 12 : 3)
@@ -30,6 +31,7 @@ export const ArticleList = memo((props: IArticleListProps) => {
     articles,
     isLoading = true,
     viewMode = ArticleView.GRID,
+    target,
   } = props;
   const { t } = useTranslation('article');
 
@@ -39,6 +41,7 @@ export const ArticleList = memo((props: IArticleListProps) => {
       article={article}
       viewMode={viewMode}
       className={cls.card}
+      target={target}
     />
   );
 
