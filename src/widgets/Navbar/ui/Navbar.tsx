@@ -9,6 +9,8 @@ import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { Text } from 'shared/ui/Text/Text';
 import { AppLink } from 'shared/ui/AppLink/AppLink';
 import { RoutePaths } from 'shared/config/routeConfig/routeConfig';
+import { Dropdown } from 'shared/ui/Dropdown/Dropdown';
+import { Avatar } from 'shared/ui/Avatar/Avatar';
 import cls from './Navbar.module.scss';
 
 interface INavbarProps {
@@ -47,13 +49,21 @@ export const Navbar = memo(({ className }: INavbarProps) => {
         >
           {t('create_article_link')}
         </AppLink>
-        <Button
-          theme={ButtonTheme.CLEAR}
-          className={cls.link}
-          onClick={onLogout}
-        >
-          {t('logout_button')}
-        </Button>
+        <Dropdown
+          direction="bottom left"
+          className={cls.dropdown}
+          trigger={<Avatar size={30} src={authData.avatar} />}
+          items={[
+            {
+              content: t('profile_page_nav'),
+              href: RoutePaths.profile + authData.id,
+            },
+            {
+              content: t('logout_button'),
+              onClick: onLogout,
+            },
+          ]}
+        />
       </header>
     );
   }

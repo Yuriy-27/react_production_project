@@ -54,6 +54,23 @@
   margin-right: 8px;
 }
 
-.optionsUp {
+.topRight {
   bottom: 100%;
+  left: 0;
 }
+
+.topLeft {
+  bottom: 100%;
+  right: 0;
+}
+
+.bottomRight {
+  top: 100%;
+  left: 0;
+}
+
+.bottomLeft {
+  top: 100%;
+  right: 0;
+}
+
