@@ -45,13 +45,13 @@ export const Page = memo((props: PageProps) => {
   });
 
   return (
-    <section
+    <main
       onScroll={onScrollHandler}
       ref={wrapperRef}
       className={classNames(cls.Page, {}, [className])}
     >
       {children}
       {onScrollEnd && <div ref={triggerRef} className={cls.trigger} />}
-    </section>
+    </main>
   );
 });
