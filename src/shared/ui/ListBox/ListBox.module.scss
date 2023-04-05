@@ -1,0 +1,59 @@
+.trigger {
+  background: var(--primary-bg-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  outline: none;
+  padding: 10px 15px;
+  margin: 0;
+  color: var(--primary-text-color);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.ListBox {
+  position: relative;
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    .trigger {
+      cursor: not-allowed;
+    }
+  }
+}
+
+.options {
+  background-color: var(--listbox-bg-color);
+  position: absolute;
+  z-index: 1000;
+  border-radius: 8px;
+  box-shadow: 0 0 0.5rem 0.1rem rgba(0 0 0 / 20%);
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: var(--primary-text-color);
+}
+
+.active {
+  background-color: var(--secondary-bg-color);
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.checkedIcon {
+  margin-right: 8px;
+}
+
+.optionsUp {
+  bottom: 100%;
+}
