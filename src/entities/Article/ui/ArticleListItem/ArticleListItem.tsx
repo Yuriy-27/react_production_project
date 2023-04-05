@@ -9,6 +9,7 @@ import { Avatar } from 'shared/ui/Avatar/Avatar';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { RoutePaths } from 'shared/config/routeConfig/routeConfig';
 import { AppLink } from 'shared/ui/AppLink/AppLink';
+import { HStack, VStack } from 'shared/ui/Stack';
 import {
   Article, ArticleBlock, ArticleBlockType, ArticleTextBlock, ArticleView,
 } from '../../model/types/article';
@@ -45,20 +46,20 @@ export const ArticleListItem = memo((props: IArticleListItemProps) => {
     ) as ArticleTextBlock;
 
     return (
-      <div className={classNames(cls.ArticleListItem, {}, [className, cls[viewMode]])}>
+      <VStack className={classNames(cls.ArticleListItem, {}, [className, cls[viewMode]])}>
         <Card className={cls.card}>
-          <div className={cls.header}>
+          <HStack maxWidth justify="between">
             <Avatar size={30} src={article.user.avatar} />
             <Text text={article.user.username} className={cls.username} />
             <Text text={article.createdAt} className={cls.date} />
-          </div>
+          </HStack>
           <Text title={article.title} className={cls.title} />
           {types}
           <img alt={article.title} src={article.img} className={cls.img} />
           {textBlock && (
             <ArticleTextBlockComponent block={textBlock} className={cls.textBlock} />
           )}
-          <div className={cls.footer}>
+          <HStack maxWidth gap="8">
             <AppLink
               className={cls.link}
               to={RoutePaths.article_details + article.id}
@@ -68,9 +69,9 @@ export const ArticleListItem = memo((props: IArticleListItemProps) => {
               </Button>
             </AppLink>
             {views}
-          </div>
+          </HStack>
         </Card>
-      </div>
+      </VStack>
     );
   }
 

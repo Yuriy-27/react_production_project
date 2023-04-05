@@ -1043,6 +1043,12 @@
       "userId": "2",
       "text": "Hello world",
       "id": "CIS9YJ5"
+    },
+    {
+      "articleId": "4",
+      "userId": "1",
+      "text": "new comment",
+      "id": "MOYgCV6"
     }
   ]
 }

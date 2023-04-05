@@ -2,6 +2,7 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Text } from 'shared/ui/Text/Text';
+import { VStack } from 'shared/ui/Stack';
 import { Comment } from '../../model/types/comment';
 import { CommentCard } from '../CommentCard/CommentCard';
 import cls from './CommentList.module.scss';
@@ -20,16 +21,16 @@ export const CommentList = memo((props: CommentListProps) => {
 
   if (isLoading) {
     return (
-      <div className={classNames(cls.CommentList, {}, [className])}>
+      <VStack maxWidth className={classNames(cls.CommentList, {}, [className])}>
         <CommentCard isLoading />
         <CommentCard isLoading />
         <CommentCard isLoading />
-      </div>
+      </VStack>
     );
   }
 
   return (
-    <div className={classNames(cls.CommentList, {}, [className])}>
+    <VStack maxWidth className={classNames(cls.CommentList, {}, [className])}>
       {comments?.length > 0
         ? comments.map((comment) => (
           <CommentCard
@@ -40,6 +41,6 @@ export const CommentList = memo((props: CommentListProps) => {
           />
         ))
         : <Text text={t('no_comments')} />}
-    </div>
+    </VStack>
   );
 });

@@ -9,7 +9,7 @@ import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { Text } from 'shared/ui/Text/Text';
 import { getUserAuthData } from 'entities/User';
-import cls from './ProfilePageHeader.module.scss';
+import { HStack } from 'shared/ui/Stack/HStack/HStack';
 
 interface IProfilePageHeaderProps {
   className?: string;
@@ -46,23 +46,21 @@ export const ProfilePageHeader = memo((props: IProfilePageHeaderProps) => {
   );
 
   return (
-    <div className={classNames(cls.ProfilePageHeader, {}, [className])}>
+    <HStack maxWidth justify="between" className={classNames('', {}, [className])}>
       <Text title={t('profile-page')} />
       {catEdit && (
-        <div className={cls.buttonsWrapper}>
+        <>
           {readOnly ? (
             <Button
               theme={ButtonTheme.OUTLINED}
-              className={cls.editButton}
               onClick={onEdit}
             >
               {t('edit-profile')}
             </Button>
           ) : (
-            <>
+            <HStack gap="8" justify="end">
               <Button
                 theme={ButtonTheme.OUTLINED}
-                className={cls.saveButton}
                 onClick={onSave}
               >
                 {t('save_edit')}
@@ -73,10 +71,10 @@ export const ProfilePageHeader = memo((props: IProfilePageHeaderProps) => {
               >
                 {t('cancel_edit')}
               </Button>
-            </>
+            </HStack>
           )}
-        </div>
+        </>
       )}
-    </div>
+    </HStack>
   );
 });

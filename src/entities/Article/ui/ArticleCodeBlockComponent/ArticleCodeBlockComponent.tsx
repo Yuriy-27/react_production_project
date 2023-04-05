@@ -2,6 +2,7 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Code, CodeTheme } from 'shared/ui/Code/Code';
+import { HStack } from 'shared/ui/Stack';
 import { ArticleCodeBlock } from '../../model/types/article';
 import cls from './ArticleCodeBlockComponent.module.scss';
 
@@ -15,11 +16,11 @@ export const ArticleCodeBlockComponent = memo((props: IArticleCodeBlockComponent
   const { t } = useTranslation();
 
   return (
-    <div className={classNames(cls.ArticleCodeBlockComponent, {}, [className])}>
+    <HStack maxWidth className={classNames(cls.ArticleCodeBlockComponent, {}, [className])}>
       <Code
         text={block.code}
         theme={CodeTheme.SECONDARY}
       />
-    </div>
+    </HStack>
   );
 });

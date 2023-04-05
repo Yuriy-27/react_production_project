@@ -24,6 +24,7 @@ import { useTranslation } from 'react-i18next';
 import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
 import { useParams } from 'react-router-dom';
 import { Page } from 'widgets/Page';
+import { VStack } from 'shared/ui/Stack/VStack/VStack';
 import cls from './ProfilePage.module.scss';
 import { ProfilePageHeader } from './ProfilePageHeader/ProfilePageHeader';
 
@@ -123,7 +124,7 @@ const ProfilePage: FC<IProfilePageProps> = (props) => {
   return (
     <DynamicModuleLoader reducers={reducers} removeReducerAfterUnmount>
       <Page className={classNames(cls.ProfilePage, {}, [className])}>
-        <div className={cls.profileWrapper}>
+        <VStack className={cls.profileWrapper}>
           {!isLoading && !error && <ProfilePageHeader />}
           {validateErrors?.length && validateErrors.map((err) => (
             <Text
@@ -146,7 +147,7 @@ const ProfilePage: FC<IProfilePageProps> = (props) => {
             onChangeCurrency={onChangeCurrency}
             onChangeCountry={onChangeCountry}
           />
-        </div>
+        </VStack>
       </Page>
     </DynamicModuleLoader>
   );

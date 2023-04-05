@@ -6,6 +6,7 @@ import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher';
 import MenuIcon from 'shared/assets/icons/menu.svg';
 import MenuOpenIcon from 'shared/assets/icons/menu_open.svg';
 import { useSelector } from 'react-redux';
+import { VStack } from 'shared/ui/Stack/VStack/VStack';
 import cls from './Sidebar.module.scss';
 import { SidebarItem } from '../SidebarItem/SidebarItem';
 import { getSidebarItems } from '../../model/selectors/getSidebarItems';
@@ -27,7 +28,7 @@ export const Sidebar = memo(({ className }: ISidebarProps) => {
       data-testid="sidebar"
       className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}
     >
-      <nav className={cls.NavLinks}>
+      <VStack gap="16" className={cls.NavLinks}>
         {sidebarItemsList.map((item) => (
           <SidebarItem
             key={item.path}
@@ -35,7 +36,7 @@ export const Sidebar = memo(({ className }: ISidebarProps) => {
             collapsed={collapsed}
           />
         ))}
-      </nav>
+      </VStack>
       <Button
         data-testid="sidebar-toggle"
         theme={ButtonTheme.BACKGROUND_INVERTED}

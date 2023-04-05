@@ -73,13 +73,17 @@ const ArticleDetailsPage = (props: IArticleDetailsPageProps) => {
       <Page className={classNames(cls.ArticleDetailsPage, {}, [className])}>
         <ArticleDetailsPageHeader />
         <ArticleDetails id={id} />
-        <Text className={cls.recommendationsTitle} title={t('recommendations')} />
-        <ArticleList
-          articles={recommendations}
-          isLoading={isRecommendationsLoading}
-          className={cls.recommendations}
-          target="_blank"
-        />
+        {recommendations.length > 0 && (
+          <>
+            <Text className={cls.recommendationsTitle} title={t('recommendations')} />
+            <ArticleList
+              articles={recommendations}
+              isLoading={isRecommendationsLoading}
+              className={cls.recommendations}
+              target="_blank"
+            />
+          </>
+        )}
         <Text className={cls.commentsTitle} title={t('comments')} />
         <AddCommentForm className={cls.commentForm} onSendComment={onSendComment} />
         <CommentList

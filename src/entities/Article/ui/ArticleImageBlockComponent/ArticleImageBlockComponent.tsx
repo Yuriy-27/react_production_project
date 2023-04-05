@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
-import { Text, TextAlign, TextTheme } from 'shared/ui/Text/Text';
+import { Text, TextAlign } from 'shared/ui/Text/Text';
+import { VStack } from 'shared/ui/Stack';
 import { ArticleImageBlock } from '../../model/types/article';
 import cls from './ArticleImageBlockComponent.module.scss';
 
@@ -13,7 +14,7 @@ export const ArticleImageBlockComponent = memo((props: IArticleImageBlockCompone
   const { className, block } = props;
 
   return (
-    <div className={classNames(cls.ArticleImageBlockComponent, {}, [className])}>
+    <VStack gap="16" className={classNames(cls.ArticleImageBlockComponent, {}, [className])}>
       <img alt={block.title} className={cls.img} src={block.src} />
       {block.title && (
         <Text
@@ -22,6 +23,6 @@ export const ArticleImageBlockComponent = memo((props: IArticleImageBlockCompone
           title={block.title}
         />
       )}
-    </div>
+    </VStack>
   );
 });
