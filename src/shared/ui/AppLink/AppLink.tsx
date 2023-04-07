@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { forwardRef } from 'react';
 import { Link, LinkProps } from 'react-router-dom';
 import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './AppLink.module.scss';
@@ -8,12 +8,12 @@ export enum AppLInkTheme {
   SECONDARY = 'secondary',
 }
 
-interface IAppLinkProps extends LinkProps {
+interface AppLinkProps extends LinkProps {
   className?: string;
   theme?: AppLInkTheme
 }
 
-export const AppLink: FC<IAppLinkProps> = (props) => {
+export const AppLink = forwardRef<HTMLAnchorElement, AppLinkProps>((props, ref) => {
   const {
     to,
     className,
@@ -24,6 +24,7 @@ export const AppLink: FC<IAppLinkProps> = (props) => {
 
   return (
     <Link
+      ref={ref}
       to={to}
       className={classNames(cls.AppLink, {}, [className, cls[theme]])}
       {...otherProps}
@@ -31,4 +32,4 @@ export const AppLink: FC<IAppLinkProps> = (props) => {
       {children}
     </Link>
   );
-};
+});

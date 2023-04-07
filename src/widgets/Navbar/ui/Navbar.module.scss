@@ -12,6 +12,12 @@
   margin-left: auto;
 }
 
+.dropdown {
+  display: flex;
+  justify-content: flex-end;
+  width: 150px;
+}
+
 .mainLink {
   margin-right: 15px;
 }
@@ -23,4 +29,8 @@
 .appName {
   width: var(--sidebar-width);
   margin-left: 15px;
+}
+
+.avatar {
+  margin-left: auto;
 }

@@ -7,7 +7,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { Text } from 'shared/ui/Text/Text';
-import { AppLink } from 'shared/ui/AppLink/AppLink';
 import { RoutePaths } from 'shared/config/routeConfig/routeConfig';
 import { Dropdown } from 'shared/ui/Dropdown/Dropdown';
 import { Avatar } from 'shared/ui/Avatar/Avatar';
@@ -43,20 +42,23 @@ export const Navbar = memo(({ className }: INavbarProps) => {
           className={cls.appName}
           title="Awesome App"
         />
-        <AppLink
-          to={RoutePaths.article_create}
-          className={cls.createArticleLink}
-        >
-          {t('create_article_link')}
-        </AppLink>
         <Dropdown
-          direction="bottom left"
           className={cls.dropdown}
-          trigger={<Avatar size={30} src={authData.avatar} />}
+          trigger={(
+            <Avatar
+              size={30}
+              src={authData.avatar}
+              className={cls.avatar}
+            />
+          )}
           items={[
             {
               content: t('profile_page_nav'),
               href: RoutePaths.profile + authData.id,
+            },
+            {
+              content: t('create_article_link'),
+              href: RoutePaths.article_create,
             },
             {
               content: t('logout_button'),

@@ -1,7 +1,13 @@
 import { Fragment, ReactNode } from 'react';
 import { Menu } from '@headlessui/react';
+import {
+  useFloating,
+  useClick,
+  useInteractions,
+  flip,
+  offset,
+} from '@floating-ui/react';
 import { classNames } from 'shared/lib/classNames/classNames';
-import { DropdownDirection } from 'shared/lib/types/ui';
 import { AppLink } from '../AppLink/AppLink';
 import cls from './Dropdown.module.scss';
 
@@ -13,35 +19,57 @@ export interface DropdownItem {
  }
 
 interface DropdownProps {
+  // need to set width via className in place where it is used
   className?: string;
   items: DropdownItem[];
   trigger: ReactNode;
-  direction?: DropdownDirection;
 }
 
-const mapOptionsDirectionClasses: Record<DropdownDirection, string> = {
-  'top right': cls.topRight,
-  'top left': cls.topLeft,
-  'bottom right': cls.bottomRight,
-  'bottom left': cls.bottomLeft,
-};
-
-export function Dropdown(props: DropdownProps) {
+export const Dropdown = (props: DropdownProps) => {
   const {
     className,
     items,
     trigger,
-    direction = 'bottom right',
   } = props;
 
-  const menuClasses = classNames(cls.menu, {}, [mapOptionsDirectionClasses[direction]]);
+  const {
+    x, y, strategy, refs, context,
+  } = useFloating({
+    placement: 'bottom-start',
+    middleware: [
+      flip({
+        fallbackPlacements: ['bottom-start', 'top-start', 'bottom-end', 'top-end'],
+        fallbackStrategy: 'bestFit',
+      }),
+      offset(10),
+    ],
+  });
+
+  const click = useClick(context);
+
+  const { getReferenceProps, getFloatingProps } = useInteractions([
+    click,
+  ]);
 
   return (
     <Menu as="div" className={classNames(cls.Dropdown, {}, [className])}>
-      <Menu.Button className={cls.button}>
+      <Menu.Button
+        className={cls.button}
+        ref={refs.setReference}
+        {...getReferenceProps()}
+      >
         { trigger }
       </Menu.Button>
-      <Menu.Items className={menuClasses}>
+      <Menu.Items
+        className={cls.menu}
+        ref={refs.setFloating}
+        style={{
+          position: strategy,
+          top: y ?? 0,
+          left: x ?? 0,
+        }}
+        {...getFloatingProps()}
+      >
         {items.map((item) => {
           const content = ({ active }: {active: boolean}) => (
             <button
@@ -57,6 +85,7 @@ export function Dropdown(props: DropdownProps) {
           if (item.href) {
             return (
               <Menu.Item
+                key={item.content as string}
                 as={AppLink}
                 disabled={item.disabled}
                 to={item.href}
@@ -66,7 +95,11 @@ export function Dropdown(props: DropdownProps) {
             );
           }
           return (
-            <Menu.Item as={Fragment} disabled={item.disabled}>
+            <Menu.Item
+              key={item.content as string}
+              as={Fragment}
+              disabled={item.disabled}
+            >
               {content}
             </Menu.Item>
           );
@@ -74,4 +107,4 @@ export function Dropdown(props: DropdownProps) {
       </Menu.Items>
     </Menu>
   );
-}
+};

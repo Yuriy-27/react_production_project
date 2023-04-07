@@ -1,8 +1,14 @@
-import { Fragment, ReactNode } from 'react';
+import { Fragment, ReactNode, useState } from 'react';
 import { Listbox as HListbox } from '@headlessui/react';
+import {
+  useFloating,
+  useClick,
+  useInteractions,
+  flip,
+  offset,
+} from '@floating-ui/react';
 import { classNames } from 'shared/lib/classNames/classNames';
-import CheckIcon from 'shared/assets/icons/check_circle-24-24.svg';
-import { DropdownDirection } from 'shared/lib/types/ui';
+import CheckIcon from 'shared/assets/icons/check-20-20.svg';
 import { Icon } from '../Icon/Icon';
 import { VStack } from '../Stack';
 import cls from './ListBox.module.scss';
@@ -20,16 +26,8 @@ interface ListboxProps {
   defaultValue?: string;
   onChange: <T extends string>(value: T) => void;
   readonly?: boolean;
-  direction?: DropdownDirection;
   label?: string;
 }
-
-const mapOptionsDirectionClasses: Record<DropdownDirection, string> = {
-  'top right': cls.topRight,
-  'top left': cls.topLeft,
-  'bottom right': cls.bottomRight,
-  'bottom left': cls.bottomLeft,
-};
 
 export function ListBox(props: ListboxProps) {
   const {
@@ -39,9 +37,27 @@ export function ListBox(props: ListboxProps) {
     defaultValue,
     onChange,
     readonly,
-    direction = 'bottom right',
     label,
   } = props;
+
+  const {
+    x, y, strategy, refs, context,
+  } = useFloating({
+    placement: 'bottom-start',
+    middleware: [
+      flip({
+        fallbackPlacements: ['bottom-start', 'top-start', 'bottom-end', 'top-end'],
+        fallbackStrategy: 'bestFit',
+      }),
+      offset(10),
+    ],
+  });
+
+  const click = useClick(context);
+
+  const { getReferenceProps, getFloatingProps } = useInteractions([
+    click,
+  ]);
 
   return (
     <VStack gap="8">
@@ -53,10 +69,19 @@ export function ListBox(props: ListboxProps) {
         value={value}
         onChange={onChange}
       >
-        <HListbox.Button className={cls.trigger}>
+        <HListbox.Button ref={refs.setReference} {...getReferenceProps()} className={cls.trigger}>
           {value ?? defaultValue ?? 'Select an option'}
         </HListbox.Button>
-        <HListbox.Options className={classNames(cls.options, {}, [mapOptionsDirectionClasses[direction]])}>
+        <HListbox.Options
+          className={classNames(cls.options, {})}
+          ref={refs.setFloating}
+          style={{
+            position: strategy,
+            top: y ?? 0,
+            left: x ?? 0,
+          }}
+          {...getFloatingProps()}
+        >
           {items?.map((item) => (
             <HListbox.Option
               key={item.value}
@@ -69,6 +94,7 @@ export function ListBox(props: ListboxProps) {
                   className={classNames(cls.option, {
                     [cls.active]: active,
                     [cls.disabled]: item.disabled,
+                    [cls.selected]: selected,
                   })}
                 >
                   {selected && <Icon className={cls.checkedIcon} Svg={CheckIcon} />}

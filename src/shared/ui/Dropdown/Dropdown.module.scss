@@ -1,4 +1,5 @@
 .Dropdown {
+  // need to set height in place where this component will be used
   position: relative;
 }
 
@@ -9,6 +10,8 @@
   cursor: pointer;
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .menu {
@@ -17,6 +20,9 @@
   z-index: 1000;
   border-radius: 8px;
   border: 1px solid var(--primary-color);
+
+  // will be 100% of the .Dropdown width
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -34,24 +40,4 @@
 .active {
   background-color: var(--secondary-bg-color);
   color: var(--primary-color);
-}
-
-.topRight {
-  bottom: 100%;
-  left: 0;
-}
-
-.topLeft {
-  bottom: 100%;
-  right: 0;
-}
-
-.bottomRight {
-  top: 100%;
-  left: 0;
-}
-
-.bottomLeft {
-  top: 100%;
-  right: 0;
 }
