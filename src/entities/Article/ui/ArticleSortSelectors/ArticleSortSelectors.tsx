@@ -1,8 +1,9 @@
 import { memo, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
-import { Select, SelectOptions } from 'shared/ui/Select/Select';
 import { SortOrder } from 'shared/lib/types/sortOrder';
+import { ListBox, ListboxItem } from 'shared/ui/ListBox/ListBox';
+import { HStack } from 'shared/ui/Stack';
 import { ArticleSortField } from '../../model/types/article';
 import cls from './ArticleSortSelectors.module.scss';
 
@@ -24,7 +25,7 @@ export const ArticleSortSelectors = memo((props: ArticleSortSelectorsProps) => {
   } = props;
   const { t } = useTranslation();
 
-  const orderOptions = useMemo<SelectOptions<SortOrder>[]>(() => [
+  const orderOptions = useMemo<ListboxItem<SortOrder>[]>(() => [
     {
       label: t('sort_order_asc'),
       value: 'asc',
@@ -35,7 +36,7 @@ export const ArticleSortSelectors = memo((props: ArticleSortSelectorsProps) => {
     },
   ], [t]);
 
-  const sortFieldOptions = useMemo<SelectOptions<ArticleSortField>[]>(() => [
+  const sortFieldOptions = useMemo<ListboxItem<ArticleSortField>[]>(() => [
     {
       label: t('sort_by_created_at'),
       value: ArticleSortField.CREATED_AT,
@@ -51,20 +52,21 @@ export const ArticleSortSelectors = memo((props: ArticleSortSelectorsProps) => {
   ], [t]);
 
   return (
-    <div className={classNames(cls.ArticleSortSelectors, {}, [className])}>
-      <Select
-        options={sortFieldOptions}
+    <HStack gap="8" className={classNames(cls.ArticleSortSelectors, {}, [className])}>
+      <ListBox
+        className={cls.sort}
+        items={sortFieldOptions}
         label={t('sort_by')}
         value={sort}
         onChange={onChangeSort}
       />
-      <Select
-        className={cls.order}
-        options={orderOptions}
+      <ListBox
+        className={cls.sort}
+        items={orderOptions}
         label={t('sort_order')}
         value={order}
         onChange={onChangeOrder}
       />
-    </div>
+    </HStack>
   );
 });

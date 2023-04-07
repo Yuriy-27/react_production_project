@@ -13,23 +13,23 @@ import { Icon } from '../Icon/Icon';
 import { VStack } from '../Stack';
 import cls from './ListBox.module.scss';
 
-export interface ListboxItem {
-  value: string;
+export interface ListboxItem<T extends string> {
+  value: T;
   label: ReactNode;
   disabled?: boolean;
 }
 
-interface ListboxProps {
+interface ListboxProps<T extends string> {
   className?: string;
-  items?: ListboxItem[];
-  value?: string;
-  defaultValue?: string;
-  onChange: <T extends string>(value: T) => void;
-  readonly?: boolean;
   label?: string;
+  value?: T;
+  items?: ListboxItem<T>[];
+  defaultValue?: string;
+  onChange: (value: T) => void;
+  readonly?: boolean;
 }
 
-export function ListBox(props: ListboxProps) {
+export const ListBox = <T extends string>(props: ListboxProps<T>) => {
   const {
     className,
     items,
@@ -61,7 +61,6 @@ export function ListBox(props: ListboxProps) {
 
   return (
     <VStack gap="8">
-      {label && <span>{label}</span>}
       <HListbox
         disabled={readonly}
         as="div"
@@ -69,8 +68,9 @@ export function ListBox(props: ListboxProps) {
         value={value}
         onChange={onChange}
       >
+        {label && <HListbox.Label className={cls.label}>{label}</HListbox.Label>}
         <HListbox.Button ref={refs.setReference} {...getReferenceProps()} className={cls.trigger}>
-          {value ?? defaultValue ?? 'Select an option'}
+          {items?.find((item) => item.value === value)?.label ?? defaultValue ?? 'Select an option'}
         </HListbox.Button>
         <HListbox.Options
           className={classNames(cls.options, {})}
@@ -107,4 +107,4 @@ export function ListBox(props: ListboxProps) {
       </HListbox>
     </VStack>
   );
-}
+};

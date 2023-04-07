@@ -1,4 +1,4 @@
-import { memo, useCallback, useMemo } from 'react';
+import { memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import {
@@ -15,7 +15,6 @@ import { Card } from 'shared/ui/Card/Card';
 import { Input } from 'shared/ui/Input/Input';
 import { SortOrder } from 'shared/lib/types/sortOrder';
 import { useDebounce } from 'shared/lib/hooks/useDebounce/useDebounce';
-import { TabItem } from 'shared/ui/Tabs/Tabs';
 import { articlesPageActions } from '../../model/slices/articlesPageSlice';
 import {
   getArticlesPageOrder,
@@ -40,16 +39,6 @@ export const ArticlesPageFilters = memo((props: ArticlesPageFiltersProps) => {
   const sort = useSelector(getArticlesPageSort);
   const search = useSelector(getArticlesPageSearch);
   const type = useSelector(getArticlesPageType);
-
-  const typeTabs = useMemo<TabItem[]>(() => {
-    const articleTypeList = Object.values(ArticleType)
-      .map((value) => ({
-        value,
-        label: t(`${value}`),
-      }));
-
-    return articleTypeList;
-  }, [t]);
 
   const fetchData = useCallback(() => {
     dispatch(fetchArticlesList({ replace: true }));
