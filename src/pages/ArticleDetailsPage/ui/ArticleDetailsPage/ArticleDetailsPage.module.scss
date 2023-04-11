@@ -7,16 +7,3 @@
 .NoArticle {
   align-items: center;
 }
-
-.commentsTitle,
-.commentForm,
-.recommendationsTitle {
-  margin-top: 20px;
-}
-
-.recommendations {
-  padding: 10px;
-  flex-wrap: nowrap;
-  overflow-y: hidden;
-  overflow-x: auto;
-}

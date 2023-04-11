@@ -45,7 +45,7 @@ export const ArticleList = memo((props: IArticleListProps) => {
     />
   );
 
-  if (!isLoading && !articles.length) {
+  if (!isLoading && !articles?.length) {
     return (
       <div className={classNames(cls.ArticleList, {}, [className, cls[viewMode]])}>
         <Text
@@ -59,8 +59,8 @@ export const ArticleList = memo((props: IArticleListProps) => {
 
   return (
     <div className={classNames(cls.ArticleList, {}, [className, cls[viewMode]])}>
-      {articles.length > 0
-        ? articles.map(renderArticles)
+      {articles?.length > 0
+        ? articles?.map(renderArticles)
         : null}
       {isLoading && getSkeletons(viewMode)}
     </div>

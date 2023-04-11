@@ -31,7 +31,7 @@ export const CommentCard = memo((props: ICommentCardProps) => {
   }
 
   return (
-    <VStack gap="8" className={classNames(cls.CommentCard, {}, [className])}>
+    <VStack gap="8" maxWidth className={classNames(cls.CommentCard, {}, [className])}>
       <AppLink
         to={`${RoutePaths.profile}${comment?.user.id}`}
         className={cls.header}

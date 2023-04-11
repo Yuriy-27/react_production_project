@@ -20,18 +20,11 @@ function MainPage() {
     <Page className={cls.MainPage}>
       {t('main-page')}
       <VStack>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, nostrum.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, nostrum.</p>
-        <HStack>
-          <div>TExt</div>
-          <ListBox
-            value={undefined}
-            items={people}
-            onChange={(value) => console.log(value)}
-          />
-        </HStack>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, nostrum.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, nostrum.</p>
+        <ListBox
+          value={undefined}
+          items={people}
+          onChange={(value) => console.log(value)}
+        />
       </VStack>
     </Page>
   );
