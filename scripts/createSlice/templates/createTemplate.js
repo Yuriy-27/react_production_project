@@ -5,13 +5,13 @@ const createUI = require('./createUI');
 const createPublicApi = require('./createPublicApi');
 
 module.exports = async (layer, sliceName) => {
-    try {
-        await fs.mkdir(resolveRoot('src', layer, sliceName));
-    } catch (e) {
-        console.log(`не удалось создать директорию для слайса${sliceName}`);
-    }
+  try {
+    await fs.mkdir(resolveRoot('src', layer, sliceName));
+  } catch (e) {
+    console.log(`Failed create directory for slice ${sliceName}`);
+  }
 
-    await createModel(layer, sliceName);
-    await createUI(layer, sliceName);
-    await createPublicApi(layer, sliceName);
+  await createModel(layer, sliceName);
+  await createUI(layer, sliceName);
+  await createPublicApi(layer, sliceName);
 };
