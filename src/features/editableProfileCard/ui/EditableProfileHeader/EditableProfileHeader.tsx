@@ -55,6 +55,7 @@ export const EditableProfileHeader = memo((props: IProfilePageHeaderProps) => {
             <Button
               theme={ButtonTheme.OUTLINED}
               onClick={onEdit}
+              data-testid="EditableProfileHeader__EditButton"
             >
               {t('edit-profile')}
             </Button>
@@ -63,12 +64,14 @@ export const EditableProfileHeader = memo((props: IProfilePageHeaderProps) => {
               <Button
                 theme={ButtonTheme.OUTLINED}
                 onClick={onSave}
+                data-testid="EditableProfileHeader__SaveButton"
               >
                 {t('save_edit')}
               </Button>
               <Button
                 theme={ButtonTheme.OUTLINED_RED}
                 onClick={onCancelEdit}
+                data-testid="EditableProfileHeader__CancelButton"
               >
                 {t('cancel_edit')}
               </Button>
