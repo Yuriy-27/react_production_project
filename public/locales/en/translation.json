@@ -1,6 +1,7 @@
 {
   "about_page_nav": "About us",
   "add_comment": "Add comment",
+  "admin_page_nav": "Admin panel",
   "articles_page_nav": "Articles",
   "bug_button": "Report a bug",
   "choose_country": "Choose country",
@@ -15,6 +16,7 @@
   "login_error": "You entered an incorrect login or password",
   "login_form": "Login form",
   "logout_button": "Logout",
+  "no_access": "You don't have access to this page",
   "no_comments": "There are no comments",
   "not_found_page": "Page not found",
   "page_error": "Something went wrong! :(",

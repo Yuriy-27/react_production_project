@@ -1,4 +1,6 @@
-import { getUserAuthData, userActions } from 'entities/User';
+import {
+  getUserAuthData, isUserAdmin, isUserManager, userActions,
+} from 'entities/User';
 import { LoginModal } from 'features/AuthByUsername';
 import { loginActions } from 'features/AuthByUsername/model/slice/loginSlice';
 import { memo, useCallback, useState } from 'react';
@@ -21,6 +23,8 @@ export const Navbar = memo(({ className }: INavbarProps) => {
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const authData = useSelector(getUserAuthData);
   const dispatch = useDispatch();
+  const isAdmin = useSelector(isUserAdmin);
+  const isManager = useSelector(isUserManager);
 
   const onCloseAuthModal = useCallback(() => {
     setIsAuthModalOpen(false);
@@ -34,6 +38,8 @@ export const Navbar = memo(({ className }: INavbarProps) => {
     dispatch(userActions.logout());
     dispatch(loginActions.clearLoginData());
   }, [dispatch]);
+
+  const isAdminPanelAvailable = isAdmin || isManager;
 
   if (authData) {
     return (
@@ -52,6 +58,10 @@ export const Navbar = memo(({ className }: INavbarProps) => {
             />
           )}
           items={[
+            ...(isAdminPanelAvailable ? [{
+              content: t('admin_page_nav'),
+              href: RoutePaths.admin_panel,
+            }] : []),
             {
               content: t('profile_page_nav'),
               href: RoutePaths.profile + authData.id,
