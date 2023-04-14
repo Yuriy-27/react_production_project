@@ -1,15 +1,16 @@
 import {
-  FC, useEffect, useMemo, useState,
+  ReactNode, useEffect, useMemo, useState,
 } from 'react';
 import { Theme, ThemeContext } from '../lib/ThemeContext';
 
 const defaultTheme = localStorage.getItem('theme') as Theme || Theme.LIGHT;
 
-interface IThemeProviderProps {
+interface ThemeProviderProps {
   initialTheme?: Theme;
+  children: ReactNode;
 }
 
-const ThemeProvider: FC<IThemeProviderProps> = (props) => {
+const ThemeProvider = (props: ThemeProviderProps) => {
   const { children, initialTheme } = props;
   const [theme, setTheme] = useState<Theme>(defaultTheme || initialTheme);
 
