@@ -8,7 +8,7 @@ import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { Avatar } from 'shared/ui/Avatar/Avatar';
 import { Skeleton } from 'shared/ui/Skeleton/Skeleton';
 import {
-  Text, TextAlign, TextSize, TextTheme,
+  Text, TextAlign, TextSize,
 } from 'shared/ui/Text/Text';
 import CalendarIcon from 'shared/assets/icons/calendar-20-20.svg';
 import EyeIcon from 'shared/assets/icons/eye-20-20.svg';
@@ -26,7 +26,7 @@ import cls from './ArticleDetails.module.scss';
 
 interface IArticleDetailsProps {
   className?: string;
-  id: string;
+  id?: string;
 }
 
 const reducers = {

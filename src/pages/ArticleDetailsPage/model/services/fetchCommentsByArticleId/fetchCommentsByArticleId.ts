@@ -4,7 +4,7 @@ import { Comment } from 'entities/Comment';
 
 export const fetchCommentsByArticleId = createAsyncThunk<
   Comment[],
-  string,
+  string | undefined,
   ThunkConfig<string>
 >(
   'articleDetailsComments/fetchCommentsByArticleId',
@@ -12,6 +12,10 @@ export const fetchCommentsByArticleId = createAsyncThunk<
     const { extra, rejectWithValue } = thunkApi;
 
     try {
+      if (!articleId) {
+        throw new Error('No article id');
+      }
+
       const response = await extra.api.get<Comment[]>('comments', {
         params: {
           articleId,

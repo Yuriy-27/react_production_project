@@ -15,7 +15,7 @@ import { fetchCommentsByArticleId } from '../../model/services/fetchCommentsByAr
 
 interface IArticleDetailsCommentsProps {
   className?: string;
-  id: string;
+  id?: string;
 }
 
 export const ArticleDetailsComments = memo((props: IArticleDetailsCommentsProps) => {
