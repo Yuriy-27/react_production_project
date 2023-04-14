@@ -2,6 +2,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Theme } from 'app/providers/ThemeProvider';
 import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
+import Avatar from 'shared/assets/images/storybook/avatar.png';
 import { Navbar } from './Navbar';
 
 export default {
@@ -28,5 +29,11 @@ Dark.decorators = [
 export const AuthNavbar = Template.bind({});
 AuthNavbar.args = {};
 AuthNavbar.decorators = [
-  StoreDecorator({ user: { authData: {} } }),
+  StoreDecorator({
+    user: {
+      authData: {
+        avatar: Avatar,
+      },
+    },
+  }),
 ];
