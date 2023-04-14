@@ -7,8 +7,8 @@ import { IUser, IUserSchema, UserRole } from './model/types/user';
 export {
   userReducer,
   userActions,
-  IUser,
-  IUserSchema,
+  type IUser,
+  type IUserSchema,
   getUserAuthData,
   getUserInit,
   UserRole,

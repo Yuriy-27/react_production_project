@@ -1,4 +1,4 @@
-import { ArticlesPageSchema } from './model/types/articlesPageSchema';
+import type { ArticlesPageSchema } from './model/types/articlesPageSchema';
 import { ArticlesPageLazy } from './ui/ArticlesPage/ArticlesPage.lazy';
 
 export {
