@@ -24,7 +24,7 @@ export const ArticleRecommendationsList = memo((props: ArticleRecommendationsLis
     return recommendations?.filter((recommendation: Article) => recommendation.id !== article?.id);
   }, [article?.id, recommendations]);
 
-  if (error || !article || filteredRecommendations?.length === 0) {
+  if (error || !recommendations || filteredRecommendations?.length === 0) {
     return null;
   }
 
@@ -33,7 +33,7 @@ export const ArticleRecommendationsList = memo((props: ArticleRecommendationsLis
       <Text title={t('recommendations')} />
       <ArticleList
         isLoading={isLoading}
-        articles={filteredRecommendations}
+        articles={filteredRecommendations || recommendations}
         target="_blank"
       />
     </VStack>
