@@ -1,4 +1,27 @@
 {
+  "notifications": [
+    {
+      "id": "1",
+      "title": "New message 1",
+      "description": "First message",
+      "userId": "1",
+      "href": "/admin-panel"
+    },
+    {
+      "id": "2",
+      "title": "New message 2",
+      "description": "Second message",
+      "userId": "1",
+      "href": "/admin-panel"
+    },
+    {
+      "id": "3",
+      "title": "New message 3",
+      "description": "Third message",
+      "userId": "1",
+      "href": "/admin-panel"
+    }
+  ],
   "posts": [
     {
       "id": "1",
@@ -21,21 +44,27 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "roles": ["admin"],
+      "roles": [
+        "admin"
+      ],
       "avatar": "https://cdn.dribbble.com/users/187214/screenshots/2011963/media/e97d8786519b74ff46af512f062909f8.png"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "roles": ["user"],
+      "roles": [
+        "user"
+      ],
       "avatar": "https://cdn.dribbble.com/users/2065683/screenshots/17634066/media/31324bb3fcb1865836065058f0599786.jpg?compress=1&resize=800x600&vertical=top"
     },
     {
       "id": "3",
       "username": "manager",
       "password": "123",
-      "roles": ["manager"],
+      "roles": [
+        "manager"
+      ],
       "avatar": "https://cdn.dribbble.com/users/2065683/screenshots/17634066/media/31324bb3fcb1865836065058f0599786.jpg?compress=1&resize=800x600&vertical=top"
     }
   ],

@@ -1,9 +1,8 @@
-.Dropdown {
-  // need to set height in place where this component will be used
+.Popover {
   position: relative;
 }
 
-.button {
+.trigger {
   background: none;
   border: none;
   outline: none;
@@ -12,30 +11,22 @@
   margin: 0;
   display: flex;
   justify-content: flex-end;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
-.menu {
+.panel {
   background-color: var(--listbox-bg-color);
   position: absolute;
   z-index: 1000;
   border-radius: 8px;
+  padding: 10px;
   border: 1px solid var(--primary-color);
+
+  // will be 100% of the .Dropdown width
   min-width: 150px;
   display: flex;
   flex-direction: column;
-}
-
-.item {
-  padding: 10px 20px;
-  width: 100%;
-  border: none;
-  background: none;
-  outline: none;
-  color: var(--primary-text-color);
-  cursor: pointer;
-}
-
-.active {
-  background-color: var(--secondary-bg-color);
-  color: var(--primary-color);
 }
