@@ -1,10 +1,10 @@
 import { Suspense, useEffect } from 'react';
-import { classNames } from 'shared/lib/classNames/classNames';
-import { Navbar } from 'widgets/Navbar';
-import { Sidebar } from 'widgets/Sidebar';
-import { AppRouter } from 'app/providers/router';
 import { useDispatch, useSelector } from 'react-redux';
-import { getUserInit, userActions } from 'entities/User';
+import { classNames } from '@/shared/lib/classNames/classNames';
+import { Navbar } from '@/widgets/Navbar';
+import { Sidebar } from '@/widgets/Sidebar';
+import { AppRouter } from '@/app/providers/router';
+import { getUserInit, userActions } from '@/entities/User';
 import { useTheme } from './providers/ThemeProvider';
 
 function App() {

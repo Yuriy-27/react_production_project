@@ -7,7 +7,7 @@ import {
   flip,
   offset,
 } from '@floating-ui/react';
-import { classNames } from 'shared/lib/classNames/classNames';
+import { classNames } from '@/shared/lib/classNames/classNames';
 import { AppLink } from '../AppLink/AppLink';
 import cls from './Dropdown.module.scss';
 

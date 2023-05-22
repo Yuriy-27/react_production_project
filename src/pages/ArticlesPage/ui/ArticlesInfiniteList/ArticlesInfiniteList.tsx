@@ -1,7 +1,7 @@
-import { ArticleList } from 'entities/Article';
 import { memo } from 'react';
 import { useSelector } from 'react-redux';
-import { classNames } from 'shared/lib/classNames/classNames';
+import { ArticleList } from '@/entities/Article';
+import { classNames } from '@/shared/lib/classNames/classNames';
 import { getArticles } from '../../model/slices/articlesPageSlice';
 import { getArticlesPageIsLoading, getArticlesPageViewMode } from '../../model/selectors/articlesPageSelectors';
 

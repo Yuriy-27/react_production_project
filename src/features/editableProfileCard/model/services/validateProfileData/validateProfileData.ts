@@ -1,5 +1,5 @@
-import { isValidAvatarUrl } from 'shared/lib/helpers/avatarUrlValidation';
-import { IProfile } from 'entities/Profile';
+import { isValidAvatarUrl } from '@/shared/lib/helpers/avatarUrlValidation';
+import { IProfile } from '@/entities/Profile';
 import { ValidateProfileError } from '../../types/editableProfileCardSchema';
 
 export const validateProfileData = (profile?: IProfile) => {

@@ -1,8 +1,8 @@
 import { DeepPartial } from '@reduxjs/toolkit';
-import { StateSchema } from 'app/providers/StoreProvider';
-import { Country } from 'entities/Country';
-import { Currency } from 'entities/Currency';
-import { IProfile } from 'entities/Profile';
+import { StateSchema } from '@/app/providers/StoreProvider';
+import { Country } from '@/entities/Country';
+import { Currency } from '@/entities/Currency';
+import { IProfile } from '@/entities/Profile';
 import { getProfileForm } from './getProfileForm';
 
 const defaultState: IProfile = {

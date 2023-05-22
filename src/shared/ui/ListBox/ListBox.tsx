@@ -7,8 +7,8 @@ import {
   flip,
   offset,
 } from '@floating-ui/react';
-import { classNames } from 'shared/lib/classNames/classNames';
-import CheckIcon from 'shared/assets/icons/check-20-20.svg';
+import { classNames } from '@/shared/lib/classNames/classNames';
+import CheckIcon from '@/shared/assets/icons/check-20-20.svg';
 import { Icon } from '../Icon/Icon';
 import { VStack } from '../Stack';
 import cls from './ListBox.module.scss';

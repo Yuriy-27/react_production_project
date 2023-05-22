@@ -1,8 +1,8 @@
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Page } from 'widgets/Page';
-import { ListBox } from 'shared/ui/ListBox/ListBox';
-import { HStack, VStack } from 'shared/ui/Stack';
+import { Page } from '@/widgets/Page';
+import { ListBox } from '@/shared/ui/ListBox/ListBox';
+import { HStack, VStack } from '@/shared/ui/Stack';
 import cls from './MainPage.module.scss';
 
 function MainPage() {

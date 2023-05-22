@@ -1,4 +1,4 @@
-import { IProfile } from 'entities/Profile';
+import { IProfile } from '@/entities/Profile';
 
 export enum ValidateProfileError {
   INVALID_FIRST_NAME = 'INVALID_FIRST_NAME',

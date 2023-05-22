@@ -1,6 +1,6 @@
-import { StateSchema } from 'app/providers/StoreProvider';
-import { ArticleView, ArticleSortField, ArticleType } from 'entities/Article';
-import { ARTICLES_VIEW_MODE_LOCAL_STORAGE_KEY } from 'shared/constants/localStorage';
+import { StateSchema } from '@/app/providers/StoreProvider';
+import { ArticleView, ArticleSortField, ArticleType } from '@/entities/Article';
+import { ARTICLES_VIEW_MODE_LOCAL_STORAGE_KEY } from '@/shared/constants/localStorage';
 
 export const getArticlesPageIsLoading = (state: StateSchema) => state.articlesPage?.isLoading || false;
 export const getArticlesPageError = (state: StateSchema) => state.articlesPage?.error;
