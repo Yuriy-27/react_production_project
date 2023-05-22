@@ -13,7 +13,7 @@ interface AnimationContextPayload {
 
 const AnimationContext = createContext<AnimationContextPayload>({});
 
-// Обе либы зависят друг от друга
+// Libraries depend on each other
 const getAsyncAnimationModules = async () => {
   return Promise.all([
     import('@react-spring/web'),

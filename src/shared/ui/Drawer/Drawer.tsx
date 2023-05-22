@@ -5,6 +5,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { useAnimationLibs } from 'shared/lib/components/AnimationProvider';
 import cls from './Drawer.module.scss';
 import { Portal } from '../Portal/Portal';
+import { Overlay } from '../Overlay/Overlay';
 
 interface IDrawerProps {
   className?: string;
@@ -88,7 +89,7 @@ export const DrawerContent = memo((props: IDrawerProps) => {
   return (
     <Portal>
       <div className={classNames(cls.Drawer, {}, [className])}>
-        <div className={cls.overlay} onClick={() => close()} />
+        <Overlay className={cls.overlay} onClick={close} />
         <Spring.a.div
           className={cls.sheet}
           style={{ display, bottom: `calc(-100vh + ${height - 100}px)`, y }}
