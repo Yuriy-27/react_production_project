@@ -7,7 +7,7 @@ export enum IconTheme {
   SECONDARY = 'secondary',
 }
 
-interface IIconProps {
+interface IIconProps extends SVGProps<SVGSVGElement> {
   className?: string;
   Svg: VFC<SVGProps<SVGSVGElement>>;
   theme?: IconTheme;
@@ -18,9 +18,13 @@ export const Icon = memo((props: IIconProps) => {
     className,
     Svg,
     theme = IconTheme.PRIMARY,
+    ...otherProps
   } = props;
 
   return (
-    <Svg className={classNames(cls.Icon, {}, [className, cls[theme]])} />
+    <Svg
+      className={classNames(cls.Icon, {}, [className, cls[theme]])}
+      {...otherProps}
+    />
   );
 });

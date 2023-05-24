@@ -2,7 +2,8 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Page } from '@/widgets/Page';
 import { ListBox } from '@/shared/ui/ListBox/ListBox';
-import { HStack, VStack } from '@/shared/ui/Stack';
+import { VStack } from '@/shared/ui/Stack';
+import { StarRating } from '@/shared/ui/StarRating/StarRating';
 import cls from './MainPage.module.scss';
 
 function MainPage() {
@@ -25,6 +26,7 @@ function MainPage() {
           items={people}
           onChange={(value) => console.log(value)}
         />
+        <StarRating />
       </VStack>
     </Page>
   );
