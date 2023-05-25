@@ -1,7 +1,6 @@
 import { memo, useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BrowserView, MobileView } from 'react-device-detect';
-import { classNames } from '@/shared/lib/classNames/classNames';
 import { Card } from '@/shared/ui/Card/Card';
 import { HStack, VStack } from '@/shared/ui/Stack';
 import { Text } from '@/shared/ui/Text/Text';
@@ -10,7 +9,6 @@ import { Modal } from '@/shared/ui/Modal/Modal';
 import { Input } from '@/shared/ui/Input/Input';
 import { Button, ButtonSize, ButtonTheme } from '@/shared/ui/Button/Button';
 import { Drawer } from '@/shared/ui/Drawer/Drawer';
-import cls from './RatingCard.module.scss';
 
 interface IRatingCardProps {
   className?: string;
@@ -19,6 +17,7 @@ interface IRatingCardProps {
   hasFeedback?: boolean;
   onCancel?: (starCount: number) => void;
   onAccept?: (starCount: number, feedback?: string) => void;
+  rate?: number;
 }
 
 export const RatingCard = memo((props: IRatingCardProps) => {
@@ -29,10 +28,11 @@ export const RatingCard = memo((props: IRatingCardProps) => {
     hasFeedback,
     onCancel,
     onAccept,
+    rate,
   } = props;
   const { t } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [starsCount, setStarsCount] = useState(0);
+  const [starsCount, setStarsCount] = useState(rate || 0);
   const [feedback, setFeedback] = useState('');
 
   const onSelectStars = useCallback((selectedStarsCount: number) => {
@@ -62,14 +62,14 @@ export const RatingCard = memo((props: IRatingCardProps) => {
   );
 
   return (
-    <Card className={classNames(cls.RatingCard, {}, [className])}>
-      <VStack align="center" gap="8">
+    <Card className={className}>
+      <VStack align="center" gap="8" justify="center" maxWidth>
         <Text title={title} />
-        <StarRating size={40} onSelect={onSelectStars} />
+        <StarRating selectedStar={starsCount} size={40} onSelect={onSelectStars} />
       </VStack>
       <BrowserView>
         <Modal isOpen={isModalOpen} lazy>
-          <VStack maxWidth>
+          <VStack maxWidth gap="16">
             {feedbackContent}
             <HStack maxWidth gap="16" justify="end">
               <Button onClick={acceptHandler}>

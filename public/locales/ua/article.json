@@ -7,5 +7,8 @@
   "comments": "Коментарі",
   "edit_article": "Рудагувати",
   "no_articles": "Статті відсутні",
-  "recommendations": "Рекомендовані статті"
+  "rate_article": "Оцініть статтю",
+  "rate_article_feedback": "Залиште свій відгук про статтю",
+  "recommendations": "Рекомендовані статті",
+  "rate_thanks": "Дякуємо за оцінку!"
 }

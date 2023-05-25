@@ -7,5 +7,8 @@
   "comments": "Comments",
   "edit_article": "Edit",
   "no_articles": "There are no articles",
-  "recommendations": "Related articles"
+  "rate_article": "Rate the article",
+  "rate_article_feedback": "Leave your feedback about the article",
+  "recommendations": "Related articles",
+  "rate_thanks": "Thanks for the rate!"
 }

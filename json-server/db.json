@@ -1086,5 +1086,57 @@
       "text": "new comment",
       "id": "MOYgCV6"
     }
+  ],
+  "article-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Good article",
+      "articleId": "1",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 4,
+      "feedback": "Good article",
+      "articleId": "2",
+      "userId": "1"
+    },
+    {
+      "articleId": "13",
+      "userId": "1",
+      "rate": 5,
+      "id": "8ftwg6O"
+    },
+    {
+      "articleId": "4",
+      "userId": "1",
+      "rate": 3,
+      "feedback": "Test feedback",
+      "id": "ZMf-2Sj"
+    },
+    {
+      "articleId": "7",
+      "userId": "1",
+      "rate": 3,
+      "feedback": "Less information",
+      "id": "7gPXL_X"
+    }
+  ],
+  "profile-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Good article",
+      "profileId": "1",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 4,
+      "feedback": "Good article",
+      "profileId": "2",
+      "userId": "1"
+    }
   ]
 }
