@@ -1,7 +1,7 @@
 import { memo, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { SortOrder } from '@/shared/lib/types/sortOrder';
+import { SortOrder } from '@/shared/types/sortOrder';
 import { ListBox, ListboxItem } from '@/shared/ui/ListBox/ListBox';
 import { HStack } from '@/shared/ui/Stack';
 import { ArticleSortField } from '../../model/types/article';

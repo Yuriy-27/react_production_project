@@ -9,8 +9,8 @@ import {
   isUserAdmin, isUserManager, userActions,
 } from '@/entities/User';
 import { loginActions } from '@/features/AuthByUsername/model/slice/loginSlice';
-import { RoutePaths } from '@/shared/config/routeConfig/routeConfig';
 import cls from './AvatarDropdown.module.scss';
+import { RoutePaths } from '@/shared/constants/router';
 
 interface IAvatarDropdownProps {
   className?: string;

@@ -13,7 +13,7 @@ import {
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { Card } from '@/shared/ui/Card/Card';
 import { Input } from '@/shared/ui/Input/Input';
-import { SortOrder } from '@/shared/lib/types/sortOrder';
+import { SortOrder } from '@/shared/types/sortOrder';
 import { useDebounce } from '@/shared/lib/hooks/useDebounce/useDebounce';
 import { articlesPageActions } from '../../model/slices/articlesPageSlice';
 import {
