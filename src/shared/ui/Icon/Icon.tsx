@@ -1,4 +1,4 @@
-import { memo, SVGProps, VFC } from 'react';
+import { memo, SVGProps, FC } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './Icon.module.scss';
 
@@ -7,13 +7,13 @@ export enum IconTheme {
   SECONDARY = 'secondary',
 }
 
-interface IIconProps extends SVGProps<SVGSVGElement> {
+interface IconProps extends SVGProps<SVGSVGElement> {
   className?: string;
-  Svg: VFC<SVGProps<SVGSVGElement>>;
+  Svg: FC<SVGProps<SVGSVGElement>>;
   theme?: IconTheme;
 }
 
-export const Icon = memo((props: IIconProps) => {
+export const Icon = memo((props: IconProps) => {
   const {
     className,
     Svg,
