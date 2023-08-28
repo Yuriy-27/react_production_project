@@ -6,5 +6,8 @@
   "comments": "comments",
   "edit_article": "edit_article",
   "no_articles": "no_articles",
+  "rate_article": "rate_article",
+  "rate_article_feedback": "rate_article_feedback",
+  "rate_thanks": "rate_thanks",
   "recommendations": "recommendations"
 }

@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { ComponentRender } from '@/shared/lib/tests/componentRender/componentRender';
+import { componentRender } from '@/shared/lib/tests/componentRender/componentRender';
 import { IProfile } from '@/entities/Profile';
 import { Currency } from '@/entities/Currency';
 import { Country } from '@/entities/Country';
@@ -42,7 +42,7 @@ const options = {
 
 describe('EditableProfileCard', () => {
   test('change readOnly statement', async () => {
-    ComponentRender(<EditableProfileCard id="1" />, options);
+    componentRender(<EditableProfileCard id="1" />, options);
     await userEvent.click(screen.getByTestId('EditableProfileHeader__EditButton'));
     expect(screen.getByTestId('EditableProfileHeader__SaveButton')).toBeInTheDocument();
     expect(screen.getByTestId('EditableProfileHeader__CancelButton')).toBeInTheDocument();
@@ -51,7 +51,7 @@ describe('EditableProfileCard', () => {
 
 describe('EditableProfileCard', () => {
   test('clear value of input and cancel edit', async () => {
-    ComponentRender(<EditableProfileCard id="1" />, options);
+    componentRender(<EditableProfileCard id="1" />, options);
     await userEvent.click(screen.getByTestId('EditableProfileHeader__EditButton'));
 
     await userEvent.clear(screen.getByTestId('ProfileCard__firstName'));
@@ -72,7 +72,7 @@ describe('EditableProfileCard', () => {
 
 describe('EditableProfileCard', () => {
   test('Error should be visible', async () => {
-    ComponentRender(<EditableProfileCard id="1" />, options);
+    componentRender(<EditableProfileCard id="1" />, options);
     await userEvent.click(screen.getByTestId('EditableProfileHeader__EditButton'));
 
     await userEvent.clear(screen.getByTestId('ProfileCard__firstName'));
@@ -86,7 +86,7 @@ describe('EditableProfileCard', () => {
 describe('EditableProfileCard', () => {
   test('Everything is OK and PUT request should be sent to the server', async () => {
     const mockPutReq = jest.spyOn($api, 'put');
-    ComponentRender(<EditableProfileCard id="1" />, options);
+    componentRender(<EditableProfileCard id="1" />, options);
     await userEvent.click(screen.getByTestId('EditableProfileHeader__EditButton'));
 
     await userEvent.type(screen.getByTestId('ProfileCard__firstName'), 'userName');

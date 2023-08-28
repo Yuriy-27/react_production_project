@@ -13,6 +13,7 @@
   "cancel_edit": "cancel_edit",
   "choose_country": "choose_country",
   "choose_currency": "choose_currency",
+  "close": "close",
   "comments": "comments",
   "create_article_link": "create_article_link",
   "decrement": "decrement",
@@ -20,6 +21,7 @@
   "edit_article": "edit_article",
   "error_text": "error_text",
   "error_title": "error_title",
+  "feedback": "feedback",
   "first_name": "first_name",
   "home_page_nav": "home_page_nav",
   "increment": "increment",
@@ -78,5 +80,7 @@
   "sort_order_desc": "sort_order_desc",
   "t(": "t(",
   "toggle": "toggle",
-  "username": "username"
+  "username": "username",
+  "Назад к списку": "Назад к списку",
+  "Редактировать": "Редактировать"
 }
