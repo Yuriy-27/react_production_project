@@ -126,6 +126,10 @@
     "react-router-dom": "^6.2.1",
     "storybook-react-i18next": "^1.1.2"
   },
+  "lint-staged": {
+    "**/*.{ts,tsx}": ["eslint"],
+    "**/*.scss": ["stylelint"]
+  },
   "loki": {
     "configurations": {
       "chrome.laptop": {
