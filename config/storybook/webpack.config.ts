@@ -19,6 +19,19 @@ export default ({ config }: { config: webpack.Configuration }) => {
     '@': paths.src,
   };
 
+  config.module?.rules?.push({
+    test: /\.(png|jpe?g|gif|svg)$/i,
+    use: [
+      {
+        loader: 'file-loader', // You can also use 'url-loader' here
+        options: {
+          name: '[name].[hash].[ext]',
+          outputPath: 'media', // Output directory for media files
+        },
+      },
+    ],
+  });
+
   // @ts-ignore
   config!.module!.rules = config.module!.rules!.map((rule: RuleSetRule) => {
     if (/svg/.test(rule.test as string)) {
