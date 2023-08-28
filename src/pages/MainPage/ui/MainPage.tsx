@@ -18,7 +18,10 @@ function MainPage() {
   ];
 
   return (
-    <Page className={cls.MainPage}>
+    <Page
+      className={cls.MainPage}
+      data-testid="MainPage"
+    >
       {t('main-page')}
       <VStack>
         <ListBox

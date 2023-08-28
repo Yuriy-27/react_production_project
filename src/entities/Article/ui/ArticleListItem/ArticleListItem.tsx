@@ -14,7 +14,7 @@ import {
 } from '../../model/types/article';
 import cls from './ArticleListItem.module.scss';
 import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent';
-import { RoutePaths } from '@/shared/constants/router';
+import { getRouteArticleDetails } from '@/shared/constants/router';
 import { AppImage } from '@/shared/ui/AppImage/AppImage';
 import { Skeleton } from '@/shared/ui/Skeleton/Skeleton';
 
@@ -69,7 +69,7 @@ export const ArticleListItem = memo((props: IArticleListItemProps) => {
           <HStack maxWidth gap="8">
             <AppLink
               className={cls.link}
-              to={RoutePaths.article_details + article.id}
+              to={getRouteArticleDetails(article.id)}
             >
               <Button theme={ButtonTheme.OUTLINED}>
                 {t('read_more')}
@@ -85,7 +85,7 @@ export const ArticleListItem = memo((props: IArticleListItemProps) => {
   return (
     <AppLink
       target={target}
-      to={RoutePaths.article_details + article.id}
+      to={getRouteArticleDetails(article.id)}
       className={classNames(cls.ArticleListItem, {}, [className, cls[viewMode]])}
     >
       <Card className={cls.card}>

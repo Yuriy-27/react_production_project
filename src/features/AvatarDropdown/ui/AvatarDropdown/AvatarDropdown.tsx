@@ -10,7 +10,7 @@ import {
 } from '@/entities/User';
 import { loginActions } from '@/features/AuthByUsername/model/slice/loginSlice';
 import cls from './AvatarDropdown.module.scss';
-import { RoutePaths } from '@/shared/constants/router';
+import { getRouteAdmin, getRouteArticleCreate, getRouteProfile } from '@/shared/constants/router';
 
 interface IAvatarDropdownProps {
   className?: string;
@@ -48,15 +48,15 @@ export const AvatarDropdown = memo((props: IAvatarDropdownProps) => {
       items={[
         ...(isAdminPanelAvailable ? [{
           content: t('admin_page_nav'),
-          href: RoutePaths.admin_panel,
+          href: getRouteAdmin(),
         }] : []),
         {
           content: t('profile_page_nav'),
-          href: RoutePaths.profile + authData.id,
+          href: getRouteProfile(authData.id),
         },
         {
           content: t('create_article_link'),
-          href: RoutePaths.article_create,
+          href: getRouteArticleCreate(),
         },
         {
           content: t('logout_button'),

@@ -7,7 +7,7 @@ function AboutPage() {
   const { t } = useTranslation('about');
 
   return (
-    <Page className={cls.AboutPage}>{t('about-page')}</Page>
+    <Page data-testid="AboutPage" className={cls.AboutPage}>{t('about-page')}</Page>
   );
 }
 
