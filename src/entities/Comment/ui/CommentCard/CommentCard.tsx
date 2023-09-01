@@ -20,7 +20,10 @@ export const CommentCard = memo((props: ICommentCardProps) => {
 
   if (isLoading) {
     return (
-      <VStack className={classNames(cls.CommentCard, {}, [className, cls.isLoading])}>
+      <VStack
+        data-testid="CommentCard.Loading"
+        className={classNames(cls.CommentCard, {}, [className, cls.isLoading])}
+      >
         <div className={cls.header}>
           <Skeleton width={30} height={30} border="50%" />
           <Skeleton className={cls.username} width={100} height={20} />
@@ -35,7 +38,12 @@ export const CommentCard = memo((props: ICommentCardProps) => {
   }
 
   return (
-    <VStack gap="8" maxWidth className={classNames(cls.CommentCard, {}, [className])}>
+    <VStack
+      data-testid="CommentCard.Content"
+      gap="8"
+      maxWidth
+      className={classNames(cls.CommentCard, {}, [className])}
+    >
       <AppLink
         to={getRouteProfile(comment?.user.username)}
         className={cls.header}

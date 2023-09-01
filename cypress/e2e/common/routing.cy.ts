@@ -1,18 +1,16 @@
-import { selectByTestId } from '../../helpers/selectByTestId';
-
 describe('Routing', () => {
   describe('Unauthorized user', () => {
     it('Main page', () => {
       cy.visit('/');
-      cy.get(selectByTestId('MainPage')).should('exist');
+      cy.getByTestId('MainPage').should('exist');
     });
     it('Profile page', () => {
       cy.visit('/profile/1');
-      cy.get(selectByTestId('MainPage')).should('exist');
+      cy.getByTestId('MainPage').should('exist');
     });
     it('Not found page ', () => {
       cy.visit('/fasfasfasf');
-      cy.get(selectByTestId('NotFoundPage')).should('exist');
+      cy.getByTestId('NotFoundPage').should('exist');
     });
   });
 
@@ -22,11 +20,11 @@ describe('Routing', () => {
     });
     it('Profile page', () => {
       cy.visit('/profile/1');
-      cy.get(selectByTestId('ProfilePage')).should('exist');
+      cy.getByTestId('ProfilePage').should('exist');
     });
     it('Articles page', () => {
       cy.visit('/articles');
-      cy.get(selectByTestId('ArticlesPage')).should('exist');
+      cy.getByTestId('ArticlesPage').should('exist');
     });
   });
 });

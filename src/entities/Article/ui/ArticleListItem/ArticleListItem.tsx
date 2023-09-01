@@ -48,7 +48,10 @@ export const ArticleListItem = memo((props: IArticleListItemProps) => {
     ) as ArticleTextBlock;
 
     return (
-      <VStack className={classNames(cls.ArticleListItem, {}, [className, cls[viewMode]])}>
+      <VStack
+        className={classNames(cls.ArticleListItem, {}, [className, cls[viewMode]])}
+        data-testid="ArticleListItem"
+      >
         <Card className={cls.card}>
           <HStack maxWidth justify="between">
             <Avatar size={30} src={article.user.avatar} />
@@ -87,6 +90,7 @@ export const ArticleListItem = memo((props: IArticleListItemProps) => {
       target={target}
       to={getRouteArticleDetails(article.id)}
       className={classNames(cls.ArticleListItem, {}, [className, cls[viewMode]])}
+      data-testid="ArticleListItem"
     >
       <Card className={cls.card}>
         <div className={cls.imageWrapper}>

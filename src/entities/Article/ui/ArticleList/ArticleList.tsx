@@ -58,7 +58,7 @@ export const ArticleList = memo((props: IArticleListProps) => {
   }
 
   return (
-    <div className={classNames(cls.ArticleList, {}, [className, cls[viewMode]])}>
+    <div className={classNames(cls.ArticleList, {}, [className, cls[viewMode]])} data-testid="ArticleList">
       {articles?.length > 0
         ? articles?.map(renderArticles)
         : null}

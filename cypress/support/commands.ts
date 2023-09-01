@@ -1,20 +1,13 @@
-// import { selectByTestId } from 'cypress/helpers/selectByTestId';
-import { login } from './commands/login';
-// import { IUser } from 'src/entities/User';
+import * as commonCommands from './commands/common';
+import * as profileCommands from './commands/profile';
+import * as articleCommands from './commands/article';
+import * as commentCommands from './commands/comment';
+import * as ratingCommands from './commands/rating';
 
-Cypress.Commands.add('login', login);
-
-// export const getByTestId = (testId: string) => {
-//   return cy.get(selectByTestId(testId));
-// };
-
-declare global {
-  namespace Cypress {
-    interface Chainable {
-      login(email?: string, password?: string): Chainable<void>;
-      // getByTestId(testId: string): Chainable<JQuery<HTMLElement>>;
-    }
-  }
-}
+Cypress.Commands.addAll(commonCommands);
+Cypress.Commands.addAll(profileCommands);
+Cypress.Commands.addAll(articleCommands);
+Cypress.Commands.addAll(commentCommands);
+Cypress.Commands.addAll(ratingCommands);
 
 export {};
